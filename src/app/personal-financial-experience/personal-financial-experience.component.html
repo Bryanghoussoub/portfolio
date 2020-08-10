@@ -1,0 +1,269 @@
+<app-header [pageTitle]="pageTitle"></app-header>
+
+<div id="title">
+  <div class="container wow fadeIn">
+    <div class="intro-info-content d-flex flex-column align-items-center text-center">
+      <h5 class="text-uppercase text-danger font-weight-bold">
+        The next big thing
+      </h5>
+      <h1 class="display-5 text-capitalize font-weight-bolder">
+        Personal Financial Experience
+      </h1>
+      <p class="w-50 ">
+        PFM is the digital state-of-art, shaping spending, organizing budgets and monitoring expenses. Customer can
+        achieve goals in a glance and make planning easy and fun to do.
+      </p>
+      <button type="button" class="btn btn-primary" [routerLink]="[
+          '/request-demo',
+          { interest: DemoServices.PERSONAL_FINANCIAL_SOLUTION }
+        ]">
+        Request Demo
+      </button>
+    </div>
+  </div>
+</div>
+
+<div id="section1">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-5">
+        <div class="mt-5 pb-sm-5 wow fadeIn">
+          <h4 class="font-weight-bolder d-flex justify-content-center justify-content-sm-start">Automatic Categorization
+          </h4>
+          <p class=" mx-4 mx-sm-0  ">
+            Our Auto-Categorization engine will give you the ability to manage, personalize and split your transactions.
+            Using the self-learning system, your preferences will be analyzed and classified, helping you track you
+            expenses and set limits to your budgets.
+          </p>
+        </div>
+        <div class="mt-5 mb-5 mb-sm-0 wow fadeIn">
+          <h4 class="font-weight-bolder d-flex justify-content-center justify-content-sm-start">Smart Assistant</h4>
+          <p class=" mb-0 mx-4 mx-sm-0">
+            What if we can analyze your spending and need to provide you with what you’re looking for?
+          </p>
+          <p class=" mx-4 mx-sm-0">
+            Our Personal assistant engine will predict your next best step by analyzing your movements, sending and
+            income.
+          </p>
+        </div>
+      </div>
+      <div class="col-sm-7">
+        <div class="">
+          <div class="digital-chart ">
+            <!-- d-none d-md-inline -->
+            <div>
+              <img src="/assets/images/digital-financial-suite/DigitalSuite_3.png" class="jarallax wow fadeIn"
+                data-jarallax-element="-120" />
+            </div>
+
+            <div class="digital-chart-car">
+              <img src="/assets/images/digital-financial-suite/DigitalSuite_4.png" class="jarallax wow fadeIn"
+                data-jarallax-element="-120" />
+            </div>
+            <div class="digital-chart-groceries">
+              <img src="/assets/images/digital-financial-suite/DigitalSuite_2.png" class="jarallax wow fadeIn"
+                data-jarallax-element="-120" />
+            </div>
+          </div>
+          <div class="digital-chart-shopping ">
+            <img src="/assets/images/digital-financial-suite/DigitalSuite_1.png" class="jarallax wow fadeIn"
+              data-jarallax-element="-120" />
+          </div>
+          <div class="digital-comment">
+            <img src="/assets/images/digital-financial-suite/DigitalSuite_6.png" class="jarallax wow fadeIn"
+              data-jarallax-element="-120" />
+          </div>
+
+          <div class="d-flex align-items-end flex-column ">
+            <img src="/assets/images/digital-financial-suite/DigitalSuite.png" class=" wow fadeIn" style="width:90%" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="section2">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-7 d-none d-sm-block">
+        <img src="/assets/images/personal-financial/PFM_Goal_img.png" class="jarallax wow fadeIn pfm-goal"
+          data-jarallax-element="-80" />
+      </div>
+      <div class="col-sm-5">
+        <div class="mt-5 pb-5 wow fadeIn text-white">
+          <h4 class="font-weight-bolder d-flex justify-content-center justify-content-sm-start">Set Goals <br />& Get
+            Rewarded</h4>
+          <p class=" mb-0 mx-4 mx-sm-0">
+            Create a Goals, Achieve it, Win. Easy steps that can be also don’t through our ATM Experience to motivate
+            customers on managing their budget. When goals are achieved, Banking reward system will award them for that
+            accomplishment.
+          </p>
+        </div>
+      </div>
+      <div class="col-sm-7 d-sm-none d-block">
+        <img src="/assets/images/personal-financial/PFM_Goal_img.png" class="jarallax wow fadeIn pfm-goal"
+          data-jarallax-element="-80" />
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-5 m-auto">
+        <div class="mt-5 pb-5 wow fadeIn text-white">
+          <h4 class="font-weight-bolder d-flex justify-content-center justify-content-sm-start">Personalized offers</h4>
+          <p class=" mb-0 mx-4 mx-sm-0">
+            By analyzing customer data, Banks can provide customers with <strong> Personalized Offers,</strong> based on
+            their spending.
+          </p>
+        </div>
+      </div>
+      <div class="col-sm-7">
+        <img src="/assets/images/personal-financial/PFM_offers_img.png" class="jarallax wow fadeIn pfm-offers"
+          data-jarallax-element="-120" />
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="section3">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-7 d-none d-sm-block">
+        <img src="/assets/images/personal-financial/PFM_mobile_img.png" class="jarallax wow fadeIn pfm-mobile"
+          data-jarallax-element="-80" />
+      </div>
+      <div class="col-sm-5">
+        <div class="mt-5 pb-sm-5 wow fadeIn ">
+          <h4 class="font-weight-bolder d-flex justify-content-center justify-content-sm-start">Budgets & Expenses</h4>
+          <p class=" mb-0 mx-4 mx-sm-0">
+            Easy-to-use budgeting and spending tools for financial insight. Review past spending based on the
+            categorization engine and time intervals. Automated budgeting is generated based on spending history of each
+            customer, which are easy to update or re-calculate.
+          </p>
+        </div>
+        <img src="/assets/images/personal-financial/PFM_notification_img.png"
+          class="jarallax wow fadeIn pfm-notification " data-jarallax-element="-80" />
+        <div class="mt-5 pb-5 wow fadeIn bottom-text-mobile">
+          <h4 class="font-weight-bolder d-flex justify-content-center justify-content-sm-start">Never miss a bill</h4>
+          <p class=" mb-0">
+            Get reminded about your bills to avoid missing them through your personal financial calendar.
+          </p>
+        </div>
+      </div>
+      <div class="col-sm-7 d-sm-none d-block">
+        <img src="/assets/images/personal-financial/PFM_mobile_img.png" class="jarallax wow fadeIn pfm-mobile"
+          data-jarallax-element="-80" />
+      </div>
+    </div>
+  </div>
+</div>
+<div id="section4">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-5">
+        <div class="mt-5 pb-5 wow fadeIn ">
+          <h4 class="font-weight-bolder d-flex justify-content-center justify-content-sm-start">Manage your accounts
+          </h4>
+          <p class=" mx-4 mx-sm-0">
+            Be ahead from your upcomming bills and reduce your unwanted fees by
+            paying it in the right time.
+          </p>
+        </div>
+      </div>
+      <div class="col-sm-7">
+        <img src="/assets/images/personal-financial/PFM_note_img.png" class="jarallax wow fadeIn pfm-note"
+          data-jarallax-element="-80" />
+        <img src="/assets/images/personal-financial/PFM_line_img.png" class="jarallax wow fadeIn pfm-line"
+          data-jarallax-element="-80" />
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="section5">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-5">
+        <div class="mt-5 pb-5 wow fadeIn ">
+          <h4 class="font-weight-bolder d-flex justify-content-center justify-content-sm-start">Transactions</h4>
+          <p class=" mx-4 mx-sm-0 ">
+            Understand where you’re spending the money by the automated insightful reports, with a categorized and
+            customized tagging system.
+          </p>
+        </div>
+      </div>
+      <div class="col-sm-7">
+        <img src="/assets/images/personal-financial/PFM_timeline_img.png" class="jarallax wow fadeIn pfm-timeline"
+          data-jarallax-element="-100" />
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="section6">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-7 d-none d-sm-inline">
+        <img src="/assets/images/personal-financial/rounded_bg.png" class="jarallax wow fadeIn pfm-rounded"
+          data-jarallax-element="-120" />
+        <img src="/assets/images/personal-financial/PFM_news3_img.png" class="jarallax wow fadeIn pfm-news3"
+          data-jarallax-element="-120" />
+        <img src="/assets/images/personal-financial/PFM_news2_img.png" class="jarallax wow fadeIn pfm-news2"
+          data-jarallax-element="-120" />
+        <img src="/assets/images/personal-financial/PFM_news_img.png" class="jarallax wow fadeIn pfm-news"
+          data-jarallax-element="-120" />
+      </div>
+      <div class="col-sm-5">
+        <div class="mt-5 pb-5 wow fadeIn ">
+          <h4 class="font-weight-bolder d-flex justify-content-center justify-content-sm-start">Notification & Alerts
+          </h4>
+          <p class=" mx-4 mx-sm-0">
+            Be alerted of your future payments, new offers, banks messages through the notification’s messages.
+          </p>
+        </div>
+      </div>
+      <div class="col-sm-7 d-sm-none  d-inline">
+        <img src="/assets/images/personal-financial/rounded_bg.png" class="jarallax wow fadeIn pfm-rounded "
+          data-jarallax-element="-120" />
+        <img src="/assets/images/personal-financial/PFM_news3_img.png" class="jarallax wow fadeIn pfm-news3"
+          data-jarallax-element="-120" />
+        <img src="/assets/images/personal-financial/PFM_news2_img.png" class="jarallax wow fadeIn pfm-news2"
+          data-jarallax-element="-120" />
+        <img src="/assets/images/personal-financial/PFM_news_img.png" class="jarallax wow fadeIn pfm-news"
+          data-jarallax-element="-120" />
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="section7">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-5 m-auto">
+        <div class="mt-5 pb-5 wow fadeIn ">
+          <h4 class="font-weight-bolder d-flex justify-content-center justify-content-sm-start">Payments</h4>
+          <p class=" mb-0 mx-4 mx-sm-0">
+            All your payments in one place!
+          </p>
+          <p class=" mx-4 mx-sm-0 ">
+            Transfer money in just 3 steps, anywhere at any time.
+          </p>
+        </div>
+      </div>
+      <div class="col-sm-7">
+        <div class="float-sm-right">
+          <img src="/assets/images/personal-financial/PFM_payments_img.png" class="jarallax wow fadeIn pfm-payments"
+            data-jarallax-element="5" />
+        </div>
+
+        <img src="/assets/images/personal-financial/PFM_payments2_img.png"
+          class="jarallax wow fadeIn pfm-woman d-none d-sm-inline" data-jarallax-element="5" />
+        <img src="/assets/images/personal-financial/PFM_payments3_img.png"
+          class="jarallax wow fadeIn pfm-man d-none d-sm-inline" data-jarallax-element="5" />
+        <img src="/assets/images/personal-financial/PFM_payments4_img.png"
+          class="jarallax wow fadeIn pfm-car d-none d-sm-inline" data-jarallax-element="5" />
+      </div>
+    </div>
+  </div>
+</div>
+
+<app-footer></app-footer>

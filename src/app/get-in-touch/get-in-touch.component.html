@@ -1,0 +1,100 @@
+<app-header [pageTitle]="pageTitle"></app-header>
+
+
+
+<div id="title">
+  <div class="container wow fadeIn">
+    <div class="intro-info-content d-flex flex-column align-items-center text-center">
+      <p class="w-50">
+        Whether you need any additional information about our solutions and digital transformation or just have a
+        couple of questions, we’d be very happy to answer your request. Just fill out the below form and our team get in
+        touch with you
+      </p>
+    </div>
+  </div>
+</div>
+<!-- START SECTION 1 -->
+<div id="section1">
+  <div class="container-fluid">
+    <!-- Grid row -->
+    <div class="row">
+      <!-- Grid column -->
+      <div class="col-md-2"></div>
+      <div class="col-md-4">
+        <form class="pr-md-5">
+          <div class="form-group">
+            <label for="fullName">Full Name</label>
+            <input required type="text" class="form-control" name="fullName" [(ngModel)]="form.fullName" />
+          </div>
+
+          <div class="form-group">
+            <label for="companyName">Company Name</label>
+            <input required type="text" class="form-control" name="companyName" [(ngModel)]="form.companyName" />
+          </div>
+
+          <div class="form-group">
+            <label for="email">Email address</label>
+            <input required type="email" class="form-control" name="email" [(ngModel)]="form.email" />
+            <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+          </div>
+          <div class="form-group">
+            <label for="mobileNumber">Mobile Number</label>
+            <input required type="tel" class="form-control" name="mobileNumber" [(ngModel)]="form.mobileNumber" />
+            <small class="form-text text-muted">Please use country code in phone number. ex: +961 77 888 333
+            </small>
+          </div>
+          <div class="form-group">
+            <label for="interestIn">Interest in</label>
+            <div>
+              <span class="badge badge-pill p-3 m-1 pointer" (click)="toggleCheck(item)" *ngFor="let item of services"
+                [ngClass]="item.checked ?'badge-primary':'badge-light'">{{ item.value }}</span>
+            </div>
+
+
+          </div>
+          <div class="form-group">
+            <label for="mobileNumber">Message</label>
+            <textarea required class="form-control" name="message" [(ngModel)]="form.message"></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary mt-4 px-5" (click)="submit()">
+            Submit Request
+          </button>
+        </form>
+      </div>
+
+      <div class="col-md-6 mt-5 mt-sm-0">
+        <div id="section7">
+          <agm-map [latitude]="mapOptions.lat" [longitude]="mapOptions.lng" [zoom]="mapOptions.zoom"
+            [keyboardShortcuts]="mapOptions.keyboardShortcuts" [disableDefaultUI]="mapOptions.disableDefaultUI"
+            [zoomControl]="mapOptions.zoomControl" [scrollwheel]="mapOptions.scrollwheel"
+            [mapTypeId]="mapOptions.mapTypeId" [styles]="mapOptions.styles">
+            <agm-marker [latitude]="companyInfo.lat" [longitude]="companyInfo.lng"
+              [iconUrl]="'/assets/images/map-marker.png'">
+              <agm-info-window>X-Tends</agm-info-window>
+            </agm-marker>
+          </agm-map>
+
+          <div class="map-card p-3 px-5">
+            <p class="font-weight-bold mb-0">
+              {{ companyInfo.address1 }}
+            </p>
+            <p class="font-weight-bold">
+              {{ companyInfo.address2 }}
+            </p>
+            <p class="mb-0">
+              {{ companyInfo.tel }}
+            </p>
+            <p>
+              {{ companyInfo.mobile }}
+            </p>
+            <p class="mb-1">
+              {{ companyInfo.email }}
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<app-footer></app-footer>

@@ -1,0 +1,66 @@
+<app-header
+
+  [pageTitle]="pageTitle"
+></app-header>
+
+<!-- START SECTION 1 -->
+<div id="section1">
+  <div class="container">
+    <div
+      class="intro-info-content d-flex flex-column align-items-center text-center"
+    >
+      <h5 class="sup-title w-50  sub-title-text">
+        Our people are innovators. Marketers. Technologists. Adaptable to change
+        and agile in an environment that’s fast-paced and ever-changing.
+      </h5>
+      <h4 class="header font-weight-bolder mt-3">
+        Want to be a part of the innovation?
+      </h4>
+    </div>
+
+    <!--Grid row-->
+    <div class="row my-5">
+      <!--Grid column-->
+      <div class="col-md-4 offset-md-4">
+        <div class="card head">
+          <img
+            src="/assets/images/careers/{{ career.image }}"
+            class="card-img-top"
+          />
+          <div class="card-body pb-0">
+            <h5 class="card-title font-weight-bolder">{{ career.subtitle }}</h5>
+          </div>
+        </div>
+      </div>
+      <!--Grid column-->
+      <div class="col-12 text-center">
+        Here’s our available positions that might be a match
+      </div>
+    </div>
+    <!--Grid row-->
+    <div class="row mb-5">
+      <!--Grid column-->
+      <div class="col-md-4" *ngFor="let job of career.jobs">
+        <div class="card job">
+          <div class="card-header">
+            {{ job.title }}
+          </div>
+          <div class="card-body">
+            <p class="card-text">
+              {{ job.body }}
+            </p>
+            <a href class="font-weight-bold text-secondary">
+              <u>Read more</u>
+            </a>
+            <div class="button-container">
+              <a href class="btn btn-primary">{{ job.button }}</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- END SECTION 1 -->
+
+<app-footer></app-footer>

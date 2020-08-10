@@ -1,0 +1,281 @@
+app-home {
+  #section1 {
+    background-image: url(/assets/images/home/banner-mixed.jpg);
+    // background-attachment: fixed;
+    z-index: 0;
+    min-height: 100vh;
+    background-position: center;
+    @include media-breakpoint-down(sm){
+      background-image: url(/assets/images/home/BG-mbile.jpg);
+      background-size: cover;
+
+    }
+
+    .container {
+      .moving-hand {
+        position: absolute;
+        top: 50px;
+        width: 60%;
+      }
+
+      .intro-info-content {
+        height: 60vh;
+
+        @include media-breakpoint-down(sm) {
+          height: 70vh;
+        }
+
+        h1 {
+          color: white;
+
+          @include media-breakpoint-down(sm) {
+            font-size: 2rem;
+          }
+        }
+      }
+
+      @include media-breakpoint-up(xl) {
+        max-width: 1270px;
+        margin-left: 100px;
+      }
+    }
+  }
+
+  #section2 {
+    z-index: 0;
+    text-align: center;
+
+    h2 {
+      color: #38425f;
+
+      @include media-breakpoint-down(sm) {
+        font-size: 1.5rem;
+      }
+    }
+
+    .subtitle {
+      .dropdown {
+        display: inline;
+
+        button {
+          &.btn {
+            border-bottom: 2px solid #e8475e;
+            color: $body-color;
+            margin-top: -3px;
+            width: 200px;
+            @extend .pb-2;
+          }
+
+          &:hover,
+          &:focus {
+            text-decoration: none;
+          }
+        }
+      }
+    }
+
+
+    $mobile-layer-width: 75%;
+    $mobile-layer-width-lg: 100%;
+    $mobile-layer-width-md: 100%;
+    $mobile-layer-width-sm: 100%;
+
+    $mobile-layer-height: 550px;
+    $mobile-layer-height-lg: 630px;
+    $mobile-layer-height-md: 450px;
+    $mobile-layer-height-sm: 300px;
+
+    .mobile-layers-container {
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: flex-end;
+      margin: 0 auto 50px;
+      height: $mobile-layer-height;
+      width: $mobile-layer-width;
+
+      img.base {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+      }
+
+      .moving-layer-container {
+        position: absolute;
+        bottom: 0;
+        display: flex;
+        z-index: 1;
+        width: 100%;
+
+        img {
+          position: absolute;
+          margin-bottom: $mobile-layer-height / 4.2;
+          bottom: 0;
+          cursor: pointer;
+
+          &.chaning-layer-base {
+            z-index: 1;
+          }
+
+          &.chaning-layer-elements {
+            z-index: 2;
+          }
+        }
+      }
+
+      @include media-breakpoint-down(lg) {
+        height: $mobile-layer-height-lg;
+        width: $mobile-layer-width-lg;
+
+        .moving-layer-container img {
+          margin-bottom: $mobile-layer-height-lg / 4.2;
+        }
+      }
+
+      @include media-breakpoint-down(md) {
+        height: $mobile-layer-height-md;
+        width: $mobile-layer-width-md;
+
+        .moving-layer-container img {
+          margin-bottom: $mobile-layer-height-md / 4.8;
+        }
+      }
+
+      @include media-breakpoint-down(sm) {
+        height: $mobile-layer-height-sm;
+        width: $mobile-layer-width-sm;
+
+        .moving-layer-container img {
+          margin-bottom: $mobile-layer-height-sm / 4.8;
+        }
+      }
+    }
+  }
+
+  #section3 {
+    background-image: url(/assets/images/home/speech-blue-gradient.jpg);
+    z-index: 0;
+    min-height: 1000px;
+    background-position: center;
+
+    @include media-breakpoint-down(sm) {
+      // height: auto;
+      background-position-y: -130px;
+      min-height: auto;
+    }
+
+    .intro-info-content {
+      .text {
+        line-height: 1.4em;
+      }
+    }
+
+    .mobile-carousel-container {
+      height: 1000px;
+
+      @include media-breakpoint-down(md) {
+        height: 650px;
+      }
+    }
+  }
+
+  #section4 {
+    background-image: url(/assets/images/home/x-bg.png);
+    background-color: white;
+    z-index: 0;
+    padding: 100px 0;
+
+    @include media-breakpoint-down(md) {
+      padding: 50px 0;
+    }
+
+    .intro-info-content {
+      .header {
+        color: #3c5bb1;
+        font-size: 12em;
+        margin: 0 -13px 35px -13px;
+        line-height: 0.8em;
+
+        &.big {
+          @include media-breakpoint-down(sm) {
+            font-size: 8em;
+          }
+        }
+      }
+
+      .subtitle,
+      .text {
+        color: #3a4958;
+      }
+
+      &:last-child {
+        padding-top: 120px;
+
+        @include media-breakpoint-down(md) {
+          padding-top: 50px;
+        }
+
+      }
+    }
+  }
+
+  #section5 {
+    background-image: url(/assets/images/home/mobile-notrons.jpg);
+    background-attachment: fixed;
+    z-index: 0;
+    min-height: 400px;
+
+    @include media-breakpoint-down(md) {
+      background-attachment: unset;
+    }
+
+    .intro-info-content {
+      .btn {
+        background-color: $cyan;
+        color: #180d5b;
+        font-weight: bold;
+      }
+    }
+  }
+
+  #section6 {
+    z-index: 0;
+
+    .header {
+      color: #3a4958;
+    }
+
+    .intro-info-content {
+      .image-container {
+        height: 40px;
+        margin-bottom: 20px;
+      }
+    }
+  }
+
+  #section7 {
+    z-index: 0;
+    height: 500px;
+    position: relative;
+
+    agm-map {
+      height: 100%;
+    }
+
+    .map-card {
+      color: #2e386e;
+      position: absolute;
+      max-width: 430px;
+      bottom: 40px;
+      right: 0;
+      background-color: white;
+      padding: 25px 40px;
+
+      @include media-breakpoint-down(sm) {
+        // max-width: 350px;
+        max-width: 100%;
+        bottom: 0;
+      }
+    }
+  }
+}

@@ -1,0 +1,44 @@
+app-get-in-touch {
+  #title {
+    @include media-breakpoint-down(md) {
+      p {
+        width: 90% !important;
+      }
+    }
+  }
+
+  #section1 {
+    min-height: 50vh;
+    padding-top: 70px;
+    padding-bottom: 100px;
+
+    .pointer {
+      cursor: pointer;
+    }
+  }
+
+  #section7 {
+    z-index: 0;
+    height: 500px;
+    position: relative;
+
+    agm-map {
+      height: 100%;
+    }
+
+    .map-card {
+      color: #2e386e;
+      position: absolute;
+      max-width: 430px;
+      bottom: 40px;
+      right: 0;
+      background-color: white;
+      padding: 25px 40px;
+
+      @include media-breakpoint-down(sm) {
+        max-width: 100%;
+        bottom: 0;
+      }
+    }
+  }
+}

@@ -1,0 +1,18 @@
+$logo-aspect-ratio: 321/612;
+$logo-width: 280px;
+
+.logo {
+  background: url(#{$path-to-images}/logo.svg) no-repeat center;
+  background-size: cover;
+  width: $logo-width;
+  height: $logo-width * $logo-aspect-ratio;
+  cursor: pointer;
+  outline: none;
+  @include media-breakpoint-down(sm) {
+    width: 240px;
+  }
+
+  &.white {
+    background-image: url(#{$path-to-images}/logo-white.svg);
+  }
+}

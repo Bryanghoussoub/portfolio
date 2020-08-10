@@ -1,0 +1,96 @@
+app-header {
+  .header {
+    display: flex;
+    justify-content: space-between;
+    @extend .px-4;
+    @extend .py-3;
+
+
+
+    &.bg {
+      background: url(/assets/images/hand.png) no-repeat center;
+      background-size: contain;
+
+      @include media-breakpoint-down(md) {
+        // background-image: none;
+        padding-bottom: 100px !important;
+        background-position-y: 130px;
+        background-size: 200px 131px;
+
+      }
+    }
+
+    .menu-button {
+      border-radius: 50%;
+      font-size: $h3-font-size;
+      padding: 0.45rem 1rem;
+      width: 58px;
+      height: 58px;
+      color: $blue;
+
+      &:hover {
+        opacity: 0.8;
+      }
+    }
+
+    .social-media-container {
+      display: flex;
+      @extend .px-3;
+      @extend .pt-4;
+
+      a {
+        border-radius: 50%;
+        margin: 0 5px;
+        width: 40px;
+        padding: 0;
+        height: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      @include media-breakpoint-down(sm) {
+        display: none;
+      }
+    }
+  }
+
+  .title-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+
+    @include media-breakpoint-down(sm) {
+      h1 {
+        font-size: 2rem !important;
+      }
+    }
+
+    .hr {
+      width: 100%;
+      height: 5px;
+      background-color: #3c5bb1;
+      // margin-top: -25px;
+    }
+
+    .title {
+      background-color: white;
+      font-weight: $font-weight-bolder;
+      text-transform: uppercase;
+      color: #3c5bb1;
+      display: inline-block;
+      left: 50%;
+      top: 50%;
+      position: absolute;
+      text-align: center;
+      transform: translate(-50%, -50%);
+      padding: 0 30px;
+
+      @include media-breakpoint-down(md) {
+        width: 80%;
+        padding: 0;
+      }
+    }
+  }
+}

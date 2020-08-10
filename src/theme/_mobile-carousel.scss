@@ -1,0 +1,61 @@
+$mobile-frame-aspect-ratio: 816/395;
+$mobile-frame-width: 320px;
+$mobile-frame-width-sm: 250px;
+$mobile-frame-gap: 5px;
+$mobile-frame-curve: 40px;
+$mobile-frame-curve-sm: 30px;
+
+.mobile-carousel {
+  width: $mobile-frame-width;
+  height: $mobile-frame-width * $mobile-frame-aspect-ratio;
+  position: relative;
+
+  @include media-breakpoint-down(sm) {
+    width: $mobile-frame-width-sm;
+    height: $mobile-frame-width-sm * $mobile-frame-aspect-ratio;
+    margin-right: -100px;
+  }
+
+  .frame {
+    position: absolute;
+    background: url(#{$path-to-images}/mobile-frame.png) no-repeat center;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+
+  .carousel {
+    position: absolute;
+    width: calc(100% - 2 * #{$mobile-frame-gap});
+    height: calc(100% - 2 * #{$mobile-frame-gap});
+    top: $mobile-frame-gap;
+    left: $mobile-frame-gap;
+    right: $mobile-frame-gap;
+    bottom: $mobile-frame-gap;
+
+    .flickity-viewport {
+      border-radius: $mobile-frame-curve;
+      mask-image: radial-gradient(white, black);
+      overflow: hidden;
+
+      img {
+        display: block;
+        width: 100%;
+        height: 100%;
+      }
+    }
+
+    .flickity-page-dots {
+      top: -40px;
+      bottom: auto;
+
+      .dot {
+        background-color: white;
+      }
+    }
+  }
+}

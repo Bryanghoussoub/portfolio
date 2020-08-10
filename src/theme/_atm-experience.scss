@@ -1,0 +1,309 @@
+app-atm-experience {
+
+  .nowrap-space {
+    white-space: nowrap;
+  }
+
+  .know-more {
+    text-decoration: underline;
+    font-weight: 500;
+  }
+
+  p {
+    text-align: justify;
+  }
+
+  @include media-breakpoint-down(md) {
+    h1 {
+      font-size: 1.75rem;
+    }
+
+    h4 {
+      text-align: center;
+    }
+
+    p {
+      width: 90% !important;
+      text-align: center;
+    }
+  }
+
+
+  #title {
+    @include media-breakpoint-down(md) {
+      padding-top: 50px;
+    }
+    button {
+      padding-left: 80px;
+      padding-right: 80px;
+    }
+
+    @include media-breakpoint-down(md) {
+
+      p {
+        width: 90% !important;
+      }
+
+    }
+  }
+
+  #section1 {
+    position: relative;
+    padding: 100px 0;
+    padding-bottom: 0px;
+
+    .title-spacing {
+      width: 100%;
+      text-align: center;
+      border-bottom: 10px solid #3a5aaf;
+      line-height: 0.1em;
+      margin: 10px 0 20px;
+      color: #3a5aaf;
+    }
+
+    .title-spacing span {
+      background: #fff;
+      padding: 0 10px;
+    }
+
+    .atm-chart {
+      position: absolute;
+      margin-left: -17px;
+      margin-top: 150px;
+
+    }
+
+    .atm-car-loan {
+      position: absolute;
+      right: 0;
+      z-index: 99;
+      bottom: 120px;
+      margin-right: -50px;
+
+      @include media-breakpoint-down(md) {
+        bottom: -30px;
+        margin-right: 0;
+
+        img {
+          width: 75%;
+        }
+      }
+    }
+
+    .atm-light {
+      position: absolute;
+      margin-top: -20px;
+      margin-left: 50px;
+
+      @include media-breakpoint-down(md) {
+        margin-top: 0;
+        margin-left: 0;
+        left: 0;
+        top: -20px;
+
+        img {
+          width: 75%;
+        }
+      }
+    }
+
+    .atm-woman {
+      position: absolute;
+      right: 0;
+      margin-right: -65px;
+
+      @include media-breakpoint-down(md) {
+        margin-right: 0;
+        top: -90px;
+
+        img {
+          width: 75%;
+        }
+      }
+    }
+  }
+
+  #section2 {
+    position: relative;
+    padding: 100px 0;
+    padding-bottom: 200px;
+
+    @include media-breakpoint-down(md) {
+      padding-top: 30px;
+    }
+    @include media-breakpoint-down(sm) {
+      padding-top: 0;
+    }
+    .title-spacing {
+      width: 100%;
+      text-align: center;
+      border-bottom: 10px solid #3a5aaf;
+      line-height: 0.1em;
+      margin: 10px 0 20px;
+      color: #3a5aaf;
+    }
+
+    .title-spacing span {
+      background: #fff;
+      padding: 0 10px;
+    }
+
+    .budget-img {
+      position: absolute;
+      left: -255px;
+
+      @include media-breakpoint-down(md) {
+        left: 0;
+        bottom: 50px;
+      }
+    }
+
+
+  }
+
+
+
+  #section3 {
+    position: relative;
+    padding: 100px 0;
+    padding-bottom: 200px;
+    background-color: #5d6e7e;
+
+    @include media-breakpoint-down(md) {
+      padding-top: 30px;
+    }
+
+    .title-spacing {
+      width: 100%;
+      text-align: center;
+      border-bottom: 10px solid #3a5aaf;
+      line-height: 0.1em;
+      margin: 10px 0 20px;
+      color: #3a5aaf;
+    }
+
+    .title-spacing span {
+      background: #fff;
+      padding: 0 10px;
+    }
+
+    .pay-car {
+      position: absolute;
+      left: 0;
+      top: -200px;
+
+      @include media-breakpoint-down(md) {
+        position: relative;
+        top: 0;
+        width: 75%;
+      }
+    }
+
+    .transfer-img {
+      position: absolute;
+      left: 80px;
+      top: -150px;
+
+      @include media-breakpoint-down(md) {
+        top: 75px;
+        width: 75%;
+
+      }
+    }
+
+    .plans-img {
+      position: absolute;
+      bottom: -110px;
+      right: -90px;
+
+      @include media-breakpoint-down(md) {
+        bottom: -35px;
+        right: 0;
+        left: 0;
+      }
+    }
+
+  }
+
+  #section4 {
+    position: relative;
+    padding: 100px 0;
+
+    @include media-breakpoint-down(md) {
+      padding-bottom: 0;
+      padding-top: 30px;
+    }
+  }
+
+
+  #section5 {
+    position: relative;
+    padding: 100px 0;
+
+    @include media-breakpoint-down(md) {
+      padding: 0;
+
+    }
+
+    .title-spacing {
+      width: 100%;
+      text-align: center;
+      border-bottom: 10px solid #3a5aaf;
+      line-height: 0.1em;
+      margin: 10px 0 20px;
+      color: #3a5aaf;
+    }
+
+    .title-spacing span {
+      background: #fff;
+      padding: 0 10px;
+    }
+
+    .save-goals {
+      position: absolute;
+      left: 0;
+      top: -100px;
+
+      @include media-breakpoint-down(md) {
+        position: relative;
+        top: 0;
+        width: 90%;
+      }
+    }
+
+    .get-reward {
+      position: absolute;
+      right: 0;
+      top: -150px;
+
+      @include media-breakpoint-down(md) {
+        position: relative;
+        top: 0;
+        left: calc(50% - 165px);
+        width: 80%;
+
+      }
+    }
+
+
+  }
+
+  #section6 {
+    position: relative;
+    padding: 100px 0;
+
+    @include media-breakpoint-down(md) {
+      padding-top: 0;
+    }
+
+    .atm-payments {
+      position: absolute;
+      right: 0;
+
+      @include media-breakpoint-down(md) {
+        position: relative;
+      }
+    }
+  }
+
+}

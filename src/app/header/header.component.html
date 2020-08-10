@@ -1,0 +1,22 @@
+<div class="header" [ngClass]="{ bg: showMiddlePic }">
+  <div class="d-flex align-items-start">
+    <button type="button" class="btn btn-link menu-button mx-sm-2 mt-sm-5" [ngClass]="buttonClass" (click)="toggleMenu()">
+      <i *ngIf="isOpen" class="fas fa-times open-button"></i>
+      <i *ngIf="!isOpen" class="fas fa-bars close-button"></i>
+    </button>
+    <div class="img logo wow fadeIn" routerLink="/" [ngClass]="logoType"></div>
+  </div>
+  <div class="social-media-container" *ngIf="showMediaLinks">
+    <nav class="nav d-flex">
+      <a *ngFor="let link of socialMediaLinks | visible" class="btn" [ngClass]="[mediaLinksClass, link.hoverClass]"
+        href="{{ link.url }}" target="_blank">
+        <i [ngClass]="link.icon"></i>
+      </a>
+    </nav>
+  </div>
+</div>
+
+<div class="title-container mt-5 mb-5" *ngIf="pageTitle">
+  <div class="hr"></div>
+  <h1 class="title">{{ pageTitle }}</h1>
+</div>

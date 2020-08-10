@@ -1,0 +1,35 @@
+app-careers {
+  #section1 {
+    min-height: 120vh;
+    @include media-breakpoint-down(md) {
+      .sub-title-text{
+        width: 100% !important;
+      }
+
+      h5 {
+        // width: 90% !important;
+        text-align: center;
+      }
+
+    }
+    .card {
+      border: none;
+
+      img {
+        border-bottom: 4px solid $body-color;
+      }
+
+      .card-title {
+        text-align: center;
+        color: $blue;
+        text-transform: uppercase;
+      }
+
+      .card-text {
+        text-align: justify;
+        text-align-last: center;
+        min-height: 230px;
+      }
+    }
+  }
+}

@@ -1,0 +1,181 @@
+app-business-financial-experience {
+  p {
+    text-align: justify;
+  }
+
+  @include media-breakpoint-down(md) {
+    h3 {
+      text-align: center;
+    }
+
+    p {
+      // width: 90% !important;
+      text-align: center;
+    }
+  }
+
+  #section1 {
+    position: relative;
+    z-index: 1;
+    @include media-breakpoint-down(md) {
+      padding-top: 50px;
+    }
+    .container {
+      button {
+        padding-left: 80px;
+        padding-right: 80px;
+      }
+    }
+
+    img {
+      position: absolute;
+
+      &.laptop-img {
+        left: 0;
+        bottom: -215px;
+
+        @include media-breakpoint-down(md) {
+          position: relative;
+          bottom: -60px;
+          left: -80px;
+        }
+      }
+
+      &.avatar-img {
+        left: 440px;
+        bottom: 325px;
+
+        @include media-breakpoint-down(md) {
+          left: inherit;
+          right: 15px;
+          bottom: inherit;
+          width: 50%;
+          margin-top: 80px;
+        }
+      }
+    }
+
+    @include media-breakpoint-down(md) {
+      h1 {
+        font-size: 1.75rem;
+      }
+
+      p {
+        width: 90% !important;
+      }
+    }
+  }
+
+  #section2 {
+    padding-top: 100px;
+    padding-bottom: 30px;
+    background-color: #3d455a;
+    position: relative;
+
+    @include media-breakpoint-down(md) {
+      padding-top: 0;
+    }
+
+    img {
+      &.progressbar-img {
+        margin: 0 -100px;
+
+        @include media-breakpoint-down(sm) {
+          margin: 0 auto;
+        }
+      }
+    }
+  }
+
+  #section3 {
+    padding-top: 100px;
+    padding-bottom: 100px;
+
+    ul.user-mng {
+      @extend .px-4;
+
+      li {
+        margin-bottom: 20px;
+        position: relative;
+
+        &:before {
+          content: ' ';
+          width: 10px;
+          height: 10px;
+          top: calc(50% - 5px);
+          margin-left: -1.5rem;
+          background: linear-gradient(45deg, #00c9ff 0%, #92fe9d 100%);
+          position: absolute;
+          border-radius: 50%;
+        }
+      }
+    }
+
+    img {
+      &.chart-image {
+        margin-top: -140px;
+
+        @include media-breakpoint-down(md) {
+          margin-top: -70px;
+
+        }
+      }
+    }
+
+    .bill-images-container {
+      position: relative;
+      min-height: 423px;
+
+      img {
+        position: absolute;
+
+        &.bill-reminder-image {
+          left: 0;
+          top: 0;
+          margin-top: -100px;
+
+          @include media-breakpoint-down(md) {
+            left: 0;
+            top: inherit;
+            width: 75%;
+            // bottom: 175px;
+            margin-top: 85px;
+            z-index: -1;
+          }
+        }
+
+        &.calendar-image {
+          right: 30px;
+
+          @include media-breakpoint-down(md) {
+            width: 70%;
+            right: 0;
+            bottom: 0;
+          }
+        }
+
+        &.electricity-bill-image {
+          left: 0;
+          bottom: 0;
+          margin-bottom: -50px;
+
+          @include media-breakpoint-down(md) {
+            width: 50%;
+          }
+        }
+      }
+    }
+
+    img {
+      &.transfer-salaries-image {
+        left: 15%;
+
+        @include media-breakpoint-down(md) {
+          left: -15%;
+        }
+      }
+    }
+
+
+  }
+}

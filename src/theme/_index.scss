@@ -1,0 +1,43 @@
+app-index {
+  $cell-height: 50vh;
+  $cell-aspect-ratio: 890/1653;
+
+  // background-image: url(/assets/images/hand-flipx.png);
+  // background-repeat: no-repeat;
+  // background-color: #f5f5f5;
+  // background-size: initial;
+  // background-position: 10% 30%;
+  // display: block;
+
+  .carousel {
+    .flickity-viewport {
+      height: $cell-height + 18vh !important;
+      padding-top: 100px;
+
+      .flickity-slider {
+        .carousel-cell {
+          width: 44vw;
+          height: $cell-height;
+          margin: 0 10px;
+          background: white;
+          background-position: top left;
+          background-size: cover;
+          background-repeat: no-repeat;
+
+          .header {
+            margin-top: -40px;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+          }
+        }
+      }
+    }
+  }
+
+  .nav {
+    a {
+      font-size: $h5-font-size;
+    }
+  }
+}

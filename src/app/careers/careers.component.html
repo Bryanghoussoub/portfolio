@@ -1,0 +1,34 @@
+<app-header [pageTitle]="pageTitle"></app-header>
+
+<!-- START SECTION 1 -->
+<div id="section1">
+  <div class="container">
+    <div class="intro-info-content d-flex flex-column align-items-center text-center">
+      <h5 class="sup-title w-50 sub-title-text">
+        We are<Strong> Innovators, Marketers & Technologists,</Strong> working in a Fast-paced and ever-changing
+        environment.
+      </h5>
+      <h4 class="header font-weight-bolder mt-3">
+        Want to be part of our innovation?
+      </h4>
+    </div>
+
+    <!--Grid row-->
+    <div class="row my-5">
+      <!--Grid column-->
+      <div class="col-md-4" *ngFor="let career of careers">
+        <div class="card">
+          <img src="/assets/images/careers/{{ career.image }}" class="card-img-top" />
+          <div class="card-body">
+            <h5 class="card-title font-weight-bolder">{{ career.title }}</h5>
+            <p class="card-text mx-4 mx-sm-0">{{ career.body }}</p>
+            <a [routerLink]="['/careers', career.id]" class="btn btn-primary d-block">{{ career.button }}</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- END SECTION 1 -->
+
+<app-footer></app-footer>

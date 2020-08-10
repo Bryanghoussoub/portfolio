@@ -1,0 +1,167 @@
+<app-header [pageTitle]="'Our Digital Financial suite'"></app-header>
+
+<!-- START SECTION 1 -->
+<div id="section1">
+  <div class="container">
+    <div class="intro-info-content d-flex flex-column align-items-center text-center">
+      <h5 class="text-uppercase text-danger font-weight-bold">
+        The next big thing
+      </h5>
+      <h1 class="display-5 text-capitalize font-weight-bolder">
+        {{ pageTitle }}
+      </h1>
+      <p class="w-50">
+        Customers nowadays are searching for flexibility and reliability. Using our client-centric solution,
+        Relationship Managers will have the power to focus on their clients' needs with an effective management and
+        innovative monitoring tools, by simplifying customers operation, reducing risks and giving the customer a full
+        view of his portfolio.
+      </p>
+      <button type="button" class="btn btn-primary" [routerLink]="[
+          '/request-demo',
+          { interest: DemoServices.WEALTH_MANAGEMENT }
+        ]">
+        Request Demo
+      </button>
+    </div>
+  </div>
+  <div class="p-relative">
+    <img src="/assets/images/wealth/chart-line.png" class="line-chart-card-image jarallax "
+      data-jarallax-element="-50" />
+
+  </div>
+  <div class="container">
+    <!-- Grid row -->
+    <div class="row">
+      <!-- Grid column -->
+      <div class="col-md-4">
+        <div class="d-flex">
+          <div class="d-flex flex-column align-items-md-center">
+            <img src="/assets/images/wealth/mobile.png" class="mt-5 mt-md-0 mobile-stock" />
+            <img src="/assets/images/wealth/hey-karl.png"
+              class="jarallax wow fadeIn chart-card-image-container d-md-none d-block" data-wow-delay="0.5s"
+              data-jarallax-element="5" />
+            <div class="mt-5 px-3 wow fadeInLeft" data-wow-delay="0.5s">
+              <h4 class="font-weight-bolder d-flex justify-content-center justify-content-sm-start">Live Stock</h4>
+              <p class="mx-4 mx-sm-0">
+                Ability to monitor stocks at real-time through our<strong> Live Stock </strong>feature. Investors will
+                be able to
+                monitor and take action with RMs at no time.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Grid column -->
+      <div class="col-md-8">
+        <div class="d-flex">
+          <div class="d-flex flex-column align-items-start flex-grow-1">
+            <div class="chart-card-image-container d-none d-md-block">
+              <img src="/assets/images/wealth/hey-karl.png" class="jarallax wow fadeIn" data-wow-delay="0.5s"
+                data-jarallax-element="5" />
+            </div>
+            <div class="d-flex justify-content-center">
+              <div class="px-3 w-75 wow fadeInLeft portfolio-mobile" data-wow-delay="0.5s">
+                <h4 class="font-weight-bolder d-flex justify-content-center justify-content-sm-start">Portfolio</h4>
+                <p class="mx-4 mx-sm-0">
+                  A unique portfolio visualizing tool allowing investors to get superior services and engage in a deeper
+                  level. Accurate reporting, Better decision and smart suggestions are in the core of this solution.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <img src="/assets/images/wealth/tsla.png" class="jarallax card-image wow fadeIn" data-jarallax-element="-50" />
+  <img src="/assets/images/wealth/rocket.png" class="jarallax rocket-image wow fadeIn" data-jarallax-element="-50" />
+  <img src="/assets/images/wealth/hand.png" class="jarallax hand-image wow fadeIn" data-jarallax-element="-100" />
+</div>
+<!-- END SECTION 1 -->
+
+<!-- START SECTION 2 -->
+<div id="section2" class="py-5">
+  <img src="/assets/images/wealth/area-chart.png" class="jarallax area-chart d-none d-sm-inline"
+    data-jarallax-element="50" />
+    <img src="/assets/images/wealth/Welath-Chart.png" class="jarallax area-chart d-sm-none d-inline"
+    data-jarallax-element="50" />
+  <div class="container">
+    <!--Grid row-->
+    <div class="row">
+      <!--Grid column-->
+      <div class="col-md-5 align-self-sm-start">
+        <div class="text-white wow fadeIn">
+          <h4 class="font-weight-bolder d-flex justify-content-center justify-content-sm-start">Reports & Analytics</h4>
+          <p class="mx-4 mx-sm-0">
+            Provide client centered expertise in assessing the state of their finances and developing risk aware
+            strategies to help them meet their goals. The accessibility to<strong> Reports & Analytics</strong> allows
+            for predictive models that benefit Wealth Managers in decision making.
+          </p>
+        </div>
+      </div>
+      <!--Grid column-->
+      <div class="col-md-2 align-self-sm-center d-none d-sm-block"></div>
+      <!--Grid column-->
+      <div class="col-md-5 align-self-sm-end">
+        <div class="text-white wow fadeIn">
+          <h4 class="font-weight-bolder d-flex justify-content-center justify-content-sm-start client-place">All your
+            clients in one place</h4>
+          <p class="mx-4 mx-sm-0">
+            Monitor your profile at any time and check your investment and transactions history. Transfer Money to
+            beneficiaries in an easy and secure way.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <img src="/assets/images/wealth/pie-chart-avatars.png" class="jarallax pie-chart-avatars"
+    data-jarallax-element="80" />
+  <img src="/assets/images/wealth/pie-chart.png" class="jarallax pie-chart" data-jarallax-element="50" />
+</div>
+<!-- END SECTION 2 -->
+
+<!-- START SECTION 3 -->
+<div id="section3">
+  <div class="container">
+    <!--Grid row-->
+    <div class="row jarallax" data-jarallax-element="-50">
+      <!--Grid column-->
+      <div class="col-md-6">
+        <img src="/assets/images/wealth/calendar.png" class="calendar-image wow fadeIn d-none d-sm-inline" />
+        <img src="/assets/images/wealth/calendar-mobile.png" class="calendar-image wow fadeIn d-sm-none d-inline" />
+      </div>
+      <!--Grid column-->
+      <div class="col-md-6">
+        <div class="wow fadeInRight">
+          <h4 class="font-weight-bolder d-flex justify-content-center justify-content-sm-start">Economic Calendar</h4>
+          <p class="mx-4 mx-sm-0">
+            Fast updated and interactive<strong> Economic Calendar </strong>for important events and releases that
+            affect stocks and
+            commodities markets. Use our economic calendar to explore key global events on the horizon that could subtly
+            shift or substantially shake up the financial markets.
+          </p>
+        </div>
+      </div>
+    </div>
+    <!--Grid row-->
+    <div class="row">
+      <!--Grid column-->
+      <div class="col-md-6">
+        <div class="wow fadeInLeft mt-5">
+          <h4 class="font-weight-bolder d-flex justify-content-center justify-content-sm-start">Advisory Tool</h4>
+          <p class="mx-4 mx-sm-0">
+            Secure communications are built on all channels helping customers with a reliable real time response with
+            a multi-services support (execution, advisory, flexibility)
+          </p>
+        </div>
+      </div>
+      <!--Grid column-->
+      <div class="col-md-6">
+        <img src="/assets/images/wealth/advisory.png" class="wow fadeIn" />
+      </div>
+    </div>
+  </div>
+</div>
+<!-- END SECTION 3 -->
+
+<app-footer></app-footer>

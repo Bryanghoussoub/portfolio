@@ -1,0 +1,64 @@
+app-career-details {
+  #section1 {
+    min-height: 120vh;
+    @include media-breakpoint-down(md) {
+      .sub-title-text{
+        width: 100% !important;
+      }
+
+      h5 {
+        // width: 90% !important;
+        text-align: center;
+      }
+
+    }
+    .card {
+      &.head {
+        border: none;
+
+        img {
+          border-bottom: 4px solid $body-color;
+        }
+
+        .card-body {
+          padding: 0;
+          @extend .pt-2;
+
+          .card-title {
+            text-align: center;
+            color: $blue;
+            text-transform: uppercase;
+            @extend .mb-1;
+          }
+        }
+      }
+
+      &.job {
+        border-color: $blue;
+        @extend .mb-5;
+
+        .card-header {
+          background-color: $blue;
+          color: white;
+          font-weight: bolder;
+        }
+
+        .card-body {
+          .card-text {
+            min-height: 230px;
+          }
+
+          .button-container {
+            text-align: center;
+
+            .btn {
+              margin-bottom: -55px;
+              padding-left: 60px;
+              padding-right: 60px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

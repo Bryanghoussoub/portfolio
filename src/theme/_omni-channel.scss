@@ -1,0 +1,138 @@
+app-omni-channel {
+  #section1 {
+    z-index: 0;
+    height: 800px;
+    position: relative;
+
+    @include media-breakpoint-down(sm) {
+      height: auto;
+    }
+
+    img {
+      position: absolute;
+      right: 5%;
+      bottom: 0;
+
+      @include media-breakpoint-down(md) {
+        position: relative;
+        right: 0 !important;
+      }
+    }
+
+    .container {
+      height: 100%;
+      display: flex;
+      align-items: center;
+
+      .intro-info-content {
+        width: 40%;
+
+        @include media-breakpoint-down(sm) {
+          text-align: center;
+
+        }
+
+        p {
+          width: 90%;
+
+        }
+
+        button {
+          width: 70%;
+        }
+      }
+    }
+
+    @include media-breakpoint-down(md) {
+      h1 {
+        font-size: 2.5rem;
+      }
+
+      p {
+        width: 90% !important;
+      }
+    }
+
+    @include media-breakpoint-down(lg) {
+      img {
+        right: -15%;
+      }
+    }
+
+    @include media-breakpoint-down(md) {
+      img {
+        // display: none;
+      }
+
+      .container {
+        .intro-info-content {
+          width: 100%;
+        }
+      }
+    }
+
+    @include media-breakpoint-up(xl) {
+      .container {
+        max-width: 1270px;
+      }
+    }
+  }
+
+  #section2 {
+    background-image: url(/assets/images/footer-bg.jpg);
+    // background-attachment: fixed;
+    z-index: 0;
+
+    @include media-breakpoint-down(sm) {
+      background-size: cover;
+      background-image: url(/assets/images/omni-channel/Bg-Omni.jpg);
+
+      p {
+        font-size: 14px;
+      }
+
+      h5 {
+        font-size: 18px;
+      }
+
+      img {
+        width: 75%;
+      }
+    }
+
+    .container {
+      padding-top: 100px;
+      padding-bottom: 50px;
+    }
+
+    .row {
+      min-height: 760px;
+    }
+  }
+
+  #section3 {
+    z-index: 0;
+    min-height: 100vh;
+
+    @include media-breakpoint-down(sm) {
+      min-height: auto;
+    }
+
+    .container {
+      padding-top: 80px;
+      padding-bottom: 80px;
+      text-align: center;
+
+      .intro-info-content {
+        max-width: 500px;
+        text-align: center;
+        @extend .mx-auto;
+
+        p {
+          text-align: justify;
+          text-align-last: center;
+        }
+      }
+    }
+  }
+}

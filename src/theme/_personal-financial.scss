@@ -1,0 +1,460 @@
+app-personal-financial-experience {
+  .nowrap-space {
+    white-space: nowrap;
+  }
+
+  .know-more {
+    text-decoration: underline;
+    font-weight: 500;
+  }
+
+  p {
+    text-align: justify;
+  }
+
+  @include media-breakpoint-down(md) {
+    h4 {
+      text-align: center;
+    }
+
+    p {
+      text-align: center;
+    }
+
+  }
+
+  #title {
+    @include media-breakpoint-down(md) {
+      padding-top: 50px;
+    }
+
+    button {
+      padding-left: 80px;
+      padding-right: 80px;
+    }
+
+    @include media-breakpoint-down(md) {
+      h1 {
+        font-size: 1.75rem;
+      }
+
+      p {
+        width: 90% !important;
+        margin-left: 15px;
+        margin-right: 15px;
+
+      }
+    }
+  }
+
+  #section1 {
+    position: relative;
+    padding: 100px 0;
+    padding-bottom: 0px;
+
+    @include media-breakpoint-down(sm) {
+      padding-top: 0;
+    }
+
+    .title-spacing {
+      width: 100%;
+      text-align: center;
+      border-bottom: 10px solid #3a5aaf;
+      line-height: 0.1em;
+      margin: 10px 0 20px;
+      color: #3a5aaf;
+    }
+
+    .title-spacing span {
+      background: #fff;
+      padding: 0 10px;
+    }
+
+    .digital-comment {
+      position: absolute;
+      margin-left: -10px;
+      z-index: -1;
+
+      @include media-breakpoint-down(md) {
+        margin-left: 0;
+        left: 0;
+        top: 10px;
+
+        img {
+          width: 50%;
+        }
+      }
+    }
+
+    .digital-chart {
+      position: absolute;
+      right: 0;
+      top: 0;
+      margin-right: -100px;
+
+      @include media-breakpoint-down(md) {
+        margin-right: 0;
+        // right: -25px;
+
+        img {
+          width: 50%;
+          margin-right: -20px;
+        }
+      }
+    }
+
+    .digital-chart-car {
+      margin-left: -30px;
+
+      @include media-breakpoint-down(md) {
+        margin-right: 0;
+
+        img {
+          width: 50%;
+        }
+      }
+    }
+
+    .digital-chart-groceries {
+      margin-left: -80px;
+
+      @include media-breakpoint-down(md) {
+        margin-right: 0;
+
+        img {
+          width: 50%;
+        }
+      }
+    }
+
+    .digital-chart-shopping {
+      position: absolute;
+      right: 75px;
+      margin-top: -40px;
+      z-index: 99;
+
+      @include media-breakpoint-down(md) {
+        margin-top: 0;
+        right: 0;
+        top: 0px;
+
+        img {
+          width: 35%;
+
+        }
+      }
+    }
+  }
+
+  #section2 {
+    position: relative;
+    padding: 100px 0;
+    padding-bottom: 0px;
+    background-color: #2a61b4;
+
+    @include media-breakpoint-down(sm) {
+      padding-top: 0;
+    }
+
+    .title-spacing {
+      width: 100%;
+      text-align: center;
+      border-bottom: 10px solid #3a5aaf;
+      line-height: 0.1em;
+      margin: 10px 0 20px;
+      color: #3a5aaf;
+    }
+
+    .title-spacing span {
+      background: #fff;
+      padding: 0 10px;
+    }
+
+    .pfm-goal {
+      top: -240px;
+      position: absolute;
+
+      @include media-breakpoint-down(sm) {
+        top: 0;
+        position: relative;
+      }
+    }
+
+    .pfm-offers {
+      margin-bottom: -85px;
+    }
+  }
+
+
+
+  #section3 {
+    position: relative;
+    padding: 100px 0;
+
+    // padding-top: 0px;
+    @include media-breakpoint-down(sm) {
+      padding-bottom: 0px;
+
+    }
+
+
+    .title-spacing {
+      width: 100%;
+      text-align: center;
+      border-bottom: 10px solid #3a5aaf;
+      line-height: 0.1em;
+      margin: 10px 0 20px;
+      color: #3a5aaf;
+    }
+
+    .title-spacing span {
+      background: #fff;
+      padding: 0 10px;
+    }
+
+    .pfm-mobile {
+      position: absolute;
+      top: -165px;
+
+      @include media-breakpoint-down(sm) {
+        top: 0;
+        position: relative;
+        width: 60%;
+      }
+    }
+
+    .bottom-text-mobile {
+      padding-top: 170px;
+
+      @include media-breakpoint-down(sm) {
+        padding-top: 0;
+
+      }
+
+    }
+
+    .pfm-notification {
+      position: absolute;
+      left: -375px;
+      margin-top: 35px;
+
+      @include media-breakpoint-down(sm) {
+        left: inherit;
+        margin-top: 0;
+        bottom: -400px;
+        width: 80%;
+        right: 0;
+        z-index: 99;
+      }
+
+
+    }
+  }
+
+  #section4 {
+    position: relative;
+    padding: 100px 0;
+
+    @include media-breakpoint-down(sm) {
+      padding-top: 0px;
+
+    }
+
+    .title-spacing {
+      width: 100%;
+      text-align: center;
+      border-bottom: 10px solid #3a5aaf;
+      line-height: 0.1em;
+      margin: 10px 0 20px;
+      color: #3a5aaf;
+    }
+
+    .title-spacing span {
+      background: #fff;
+      padding: 0 10px;
+    }
+
+    .pfm-note {
+      position: absolute;
+      top: -100px;
+      right: 0;
+
+      @include media-breakpoint-down(md) {
+        top: -70px;
+      }
+    }
+
+    .pfm-line {
+      position: absolute;
+      top: 30px;
+      right: 0;
+
+      @include media-breakpoint-down(md) {
+        top: 50px;
+      }
+    }
+  }
+
+  #section5 {
+    position: relative;
+    padding: 100px 0;
+
+    // padding-top: 0px;
+    @include media-breakpoint-down(md) {
+      padding-bottom: 0;
+    }
+
+    .title-spacing {
+      width: 100%;
+      text-align: center;
+      border-bottom: 10px solid #3a5aaf;
+      line-height: 0.1em;
+      margin: 10px 0 20px;
+      color: #3a5aaf;
+    }
+
+    .title-spacing span {
+      background: #fff;
+      padding: 0 10px;
+    }
+
+    .pfm-timeline {
+      position: absolute;
+      top: -100px;
+      right: 0;
+
+      @include media-breakpoint-down(sm) {
+        position: relative;
+        top: 0;
+      }
+    }
+
+
+  }
+
+  #section6 {
+    position: relative;
+    padding: 100px 0;
+
+    // padding-top: 0px;
+    // height: 100vh;
+    @include media-breakpoint-down(md) {
+      padding: 0;
+    }
+
+    .title-spacing {
+      width: 100%;
+      text-align: center;
+      border-bottom: 10px solid #3a5aaf;
+      line-height: 0.1em;
+      margin: 10px 0 20px;
+      color: #3a5aaf;
+    }
+
+    .title-spacing span {
+      background: #fff;
+      padding: 0 10px;
+    }
+
+    .pfm-rounded {
+      position: absolute;
+      top: -100px;
+      right: 0;
+
+      @include media-breakpoint-down(sm) {
+        top: 0;
+        right: 0;
+      }
+    }
+
+    .pfm-news3 {
+      position: absolute;
+      right: 50px;
+      top: 10px;
+      z-index: 99;
+
+      @include media-breakpoint-down(sm) {
+        position: relative;
+        top: 0;
+        right: 0;
+      }
+    }
+
+    .pfm-news2 {
+      position: absolute;
+      top: 100px;
+      z-index: 99;
+
+      @include media-breakpoint-down(sm) {
+        position: relative;
+        top: 0;
+        right: 0;
+      }
+
+    }
+
+    .pfm-news {
+      position: absolute;
+      top: 210px;
+      right: 0;
+      z-index: 99;
+
+      @include media-breakpoint-down(sm) {
+        position: relative;
+        top: 0;
+        right: 0;
+      }
+    }
+  }
+
+
+  #section7 {
+    position: relative;
+    padding: 100px 0;
+    // padding-top: 0px;
+    padding-top: 150px;
+
+    @include media-breakpoint-down(md) {
+      padding-top: 0;
+    }
+
+    .title-spacing {
+      width: 100%;
+      text-align: center;
+      border-bottom: 10px solid #3a5aaf;
+      line-height: 0.1em;
+      margin: 10px 0 20px;
+      color: #3a5aaf;
+    }
+
+    .title-spacing span {
+      background: #fff;
+      padding: 0 10px;
+    }
+
+    .pfm-payments {
+      // position: absolute;
+      top: 0;
+      right: 0;
+    }
+
+    .pfm-man {
+      position: absolute;
+      top: 65px;
+      left: 75px;
+    }
+
+    .pfm-woman {
+      position: absolute;
+      top: -120px;
+      right: -40px;
+    }
+
+    .pfm-car {
+      position: absolute;
+      bottom: -80px;
+      right: -100px;
+    }
+
+  }
+}

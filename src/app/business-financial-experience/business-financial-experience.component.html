@@ -1,0 +1,224 @@
+<app-header [pageTitle]="'Our Digital Financial Suite'"></app-header>
+
+<!-- START SECTION 1 -->
+<div id="section1">
+
+  <div class="container">
+    <div class="intro-info-content d-flex flex-column align-items-center text-center">
+      <h5 class="text-uppercase text-danger font-weight-bold">
+        The next big thing
+      </h5>
+      <h1 class="display-5 text-capitalize font-weight-bolder">
+        {{ pageTitle }}
+      </h1>
+      <p class="w-50">
+        The<strong> Business Financial Experience</strong> help corporate customers, in addition to the basic banking
+        services, to grow
+        by offering them a solution to plan, manage their money and spot the best opportunities to expand their
+        businesses.
+      </p>
+      <button type="button" class="btn btn-primary" [routerLink]="[
+          '/request-demo',
+          { interest: DemoServices.BUSINESS_FINANCIAL_SOLUTION }
+        ]">
+        Request Demo
+      </button>
+    </div>
+    <img src="/assets/images/business-financial/laptop.png" class="laptop-img jarallax " data-jarallax-element="20" />
+    <img src="/assets/images/business-financial/people-avatars.png" class="avatar-img jarallax "
+      data-jarallax-element="30" />
+    <!--Grid row-->
+    <div class="row my-sm-5">
+      <!--Grid column-->
+      <div class="col-md-5 offset-md-7 pt-5 mt-5 mb-0 mb-sm-4">
+        <h3 class="font-weight-bolder mt-4 d-flex justify-content-center justify-content-sm-start">Holding Overview</h3>
+        <p class="mb-5 mx-4 mx-sm-0">
+          Track your holding company’s status with a dynamic dashboard, a multilingual user interface and smart
+          analytics reporting system.
+        </p>
+
+        <h3 class="font-weight-bolder mt-4 d-flex justify-content-center justify-content-sm-start">Company Overview</h3>
+        <p class="mb-5 mx-4 mx-sm-0">
+          Effective<strong> Company Dashboard</strong> helping you check your invoicing and expenses, track your latest
+          activities,
+          Generate reports, check employee’s behavior and many more business features
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- END SECTION 1 -->
+
+<!-- START SECTION 2 -->
+<div id="section2">
+  <div class="container">
+    <!--Grid row-->
+    <div class="row my-5">
+      <!--Grid column-->
+      <div class="col-md-5 mt-5 text-white">
+        <h3 class="font-weight-bolder mt-4 d-flex justify-content-center justify-content-sm-start">Income & Expenses
+        </h3>
+        <p class="mb-5 mx-4 mx-sm-0">
+          Our Business financial Experience is equipped with a heat map calendar showing all expenses & incomes,
+          acquiring a clear view for the business management.
+        </p>
+        <img src="/assets/images/business-financial/progress-bars.png"
+          class="progressbar-img jarallax d-md-none d-block" data-jarallax-element="-100" />
+        <h3 class="font-weight-bolder mt-5 mt-sm-4 d-flex justify-content-center justify-content-sm-start">Budgets</h3>
+        <p class="mb-0 mb-sm-5 mx-4 mx-sm-0">
+          Easy-to-use budgeting and spending tool for financial insights. Review past spending’s based on timelines
+          and categories. Based on the spending history, Budgeting can be calculated automatically or manually.
+        </p>
+      </div>
+      <!-- Grid column-->
+      <div class="col-md-7 d-flex align-items-start justify-content-end ">
+        <img src="/assets/images/business-financial/progress-bars.png"
+          class="progressbar-img jarallax d-none d-md-block" data-jarallax-element="-100" />
+      </div>
+    </div>
+  </div>
+</div>
+<!-- END SECTION 2 -->
+
+<!-- START SECTION 3 -->
+<div id="section3">
+  <div class="container">
+    <!--Grid row-->
+    <div class="row">
+      <!--Grid column-->
+      <div class="col-md-7 mb-sm-5 mb-0">
+        <img src="/assets/images/business-financial/company-account-line-chart.png"
+          class="chart-image jarallax wow fadeIn" data-jarallax-element="-50" />
+      </div>
+      <!--Grid column-->
+      <div class="col-md-4">
+        <h3 class="font-weight-bolder d-flex justify-content-center justify-content-sm-start">Manage your accounts</h3>
+        <p class="mx-4 mx-sm-0">
+          Be ahead of your upcoming bills. You can add a new payment, delete it and even edit it.
+        </p>
+      </div>
+    </div>
+    <!--Grid row-->
+    <div class="row">
+      <!--Grid column-->
+      <div class="col-md-7 mb-5 mb-sm-0">
+        <div class="bill-images-container">
+          <img src="/assets/images/business-financial/bill-reminder.png"
+            class="bill-reminder-image jarallax wow fadeInDown " data-jarallax-element="-50" />
+          <img src="/assets/images/business-financial/calendar.png" class="calendar-image wow fadeIn" />
+          <img src="/assets/images/business-financial/electricity-bill.png"
+            class="electricity-bill-image jarallax wow fadeInTop" data-jarallax-element="-30" />
+        </div>
+      </div>
+      <!--Grid column-->
+      <div class="col-md-4">
+        <h3 class="font-weight-bolder mt-5 d-flex justify-content-center justify-content-sm-start">Financial Calendar
+        </h3>
+        <p class="mx-4 mx-sm-0">
+          Companies Calendar will provide you with the upcoming bills on a daily, monthly and yearly timelines.
+        </p>
+      </div>
+    </div>
+    <!--Grid row-->
+    <div class="row mt-5">
+      <!--Grid column-->
+      <div class="col-md-6 d-sm-none d-block">
+        <img src="/assets/images/business-financial/transfer-salaries.png"
+          class="transfer-salaries-image jarallax wow fadeIn" data-jarallax-element="-30" />
+      </div>
+      <div class="col-md-5 d-flex flex-column justify-content-center">
+        <h3 class="font-weight-bolder mt-5 d-flex justify-content-center justify-content-sm-start">Salaries Management
+        </h3>
+        <p class="mb-5 mx-4 mx-sm-0">
+          Pay all the employees’ salaries in one click. Manage all salaries in one plan, which can be edited at any
+          time. Alert system is available to notify you for upcoming salaries payments.
+        </p>
+        <h3 class="font-weight-bolder mt-5">Transactions</h3>
+        <p class="mb-5 mx-4 mx-sm-0">
+          Never miss a payment order. Check your payment collection list and transfer money to beneficiaries easily.
+        </p>
+      </div>
+      <!--Grid column-->
+
+      <div class="col-md-6 d-none d-sm-block">
+        <img src="/assets/images/business-financial/transfer-salaries.png"
+          class="transfer-salaries-image jarallax wow fadeIn" data-jarallax-element="-30" />
+      </div>
+    </div>
+    <!--Grid row-->
+    <div class="row">
+      <!--Grid column-->
+      <div class="col-md-7 text-center">
+        <img src="/assets/images/business-financial/track-employees.png"
+          class="bill-reminder-image jarallax wow fadeInDown" data-jarallax-element="-100" />
+      </div>
+      <!--Grid column-->
+      <div class="col-md-4">
+        <h3 class="font-weight-bolder mt-5 d-flex justify-content-center justify-content-sm-start">User Management</h3>
+        <p class="mx-4 mx-sm-0">
+          Track your employee’s performance daily. Review employee projects and status with messaging capability.
+          <br />
+          Review employee projects and status. Send direct messages.
+        </p>
+        <ul class="list-unstyled user-mng mt-5">
+          <li>
+            <div>Juanury 26, 2018</div>
+            <span class="font-weight-bold">Started Project "Sorenza"</span>
+          </li>
+          <li>
+            <div>Juanury 25, 2018</div>
+            <span class="font-weight-bold">Closed Project # 456</span>
+          </li>
+          <li>
+            <div>Juanury 24, 2018</div>
+            <span class="font-weight-bold">Assigned Tasks to John Carlo Haddad</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!--Grid row-->
+    <div class="row">
+      <!--Grid column-->
+      <div class="col-md-5">
+        <h3 class="font-weight-bolder mt-5 d-flex justify-content-center justify-content-sm-start">Entitlments &
+          Workflows</h3>
+        <p class="mb-5 mx-4 mx-sm-0">
+          Manage your company by creating accounts and users defined under structured group with access and permission
+          levels. Track user and group tasks through their workflow.
+        </p>
+      </div>
+      <!--Grid column-->
+      <div class="col-md-7 d-flex align-items-center justify-content-end">
+        <img src="/assets/images/business-financial/workflow.png" class="workflow-image jarallax wow fadeIn"
+          data-jarallax-element="-50" />
+      </div>
+    </div>
+    <!--Grid row-->
+    <div class="row">
+      <!--Grid column-->
+      <div class="col-md-6   d-none d-sm-inline">
+        <img src="/assets/images/business-financial/trade-fin-box1.png" class="jarallax wow fadeIn"
+          data-jarallax-element="-80" />
+        <img src="/assets/images/business-financial/trade-fin-box2.png" class="jarallax wow fadeIn align-self-end"
+          data-jarallax-element="-30" />
+      </div>
+      <!--Grid column-->
+      <div class="offset-md-1 col-md-4">
+        <h3 class="font-weight-bolder mt-5 d-flex justify-content-center justify-content-sm-start">Trade Finance</h3>
+        <p>
+          Open/Amend Letters of Credit and Request Letters of Guarantee with an autofill feature to simplify your
+          process.
+        </p>
+      </div>
+      <div class="col-md-6   d-md-none d-flex" style="flex-direction: column;">
+        <img src="/assets/images/business-financial/trade-fin-box1.png" class="jarallax wow fadeIn w-75"
+          data-jarallax-element="-80" />
+        <img src="/assets/images/business-financial/trade-fin-box2.png" class="jarallax wow fadeIn align-self-end w-75"
+          data-jarallax-element="-30" style="  align-self: flex-end;  " />
+      </div>
+    </div>
+  </div>
+</div>
+<!-- END SECTION 3 -->
+
+<app-footer></app-footer>

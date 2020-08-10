@@ -1,0 +1,54 @@
+<div class="jarallax">
+  <div class="container">
+    <div class="social-media-container">
+      <nav class="nav d-flex justify-content-center justify-content-sm-end">
+        <a
+          *ngFor="let link of socialMediaLinks | visible"
+          class="btn btn-outline-light"
+          [ngClass]="link.hoverClass"
+          href="{{ link.url }}"
+          target="_blank"
+        >
+          <i [ngClass]="link.icon"></i>
+        </a>
+      </nav>
+    </div>
+
+    <!--Grid row-->
+    <div class="row link-container">
+      <!--Grid column-->
+      <div
+        class="mb-4"
+        [ngClass]="group.cssClass"
+        *ngFor="let group of linksGroup | visible"
+      >
+        <nav class="nav flex-column">
+          <span class="title">{{ group.title }}</span>
+          <div class="divider"></div>
+          <span *ngFor="let link of group.links | visible">
+            <a
+              *ngIf="!link.external"
+              class="link"
+              [routerLink]="[link.url]"
+              [routerLinkActive]="'active'"
+            >
+              {{ link.title }}
+            </a>
+            <a
+              *ngIf="link.external"
+              class="link"
+              href="{{ link.url }}"
+              target="_blank"
+            >
+              {{ link.title }}
+            </a>
+          </span>
+        </nav>
+      </div>
+    </div>
+    <!--Copyright -->
+    <div class="text-white mt-4">
+      {{ copyright }}
+    </div>
+  </div>
+</div>

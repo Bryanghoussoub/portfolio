@@ -1,0 +1,244 @@
+app-administration-experience {
+
+  .nowrap-space {
+    white-space: nowrap;
+  }
+
+  .know-more {
+    text-decoration: underline;
+    font-weight: 500;
+  }
+
+  p {
+    text-align: justify;
+  }
+
+  @include media-breakpoint-down(md) {
+    h4 {
+      text-align: center;
+    }
+
+    p {
+      text-align: center;
+    }
+
+  }
+
+  #title {
+    @include media-breakpoint-down(md) {
+      padding-top: 50px;
+    }
+    button {
+      padding-left: 80px;
+      padding-right: 80px;
+    }
+
+    @include media-breakpoint-down(md) {
+      h1 {
+        font-size: 1.75rem;
+      }
+
+      p {
+        width: 90% !important;
+      }
+    }
+  }
+
+  #section1 {
+    position: relative;
+    padding: 100px 0;
+    padding-top: 150px;
+
+    @include media-breakpoint-down(md) {
+      padding-top: 100px;
+    }
+
+    .laptop-img {
+      position: absolute;
+      right: -130px;
+      top: 80px;
+
+      @include media-breakpoint-down(md) {
+        position: relative;
+        right: 0;
+        top: 0;
+      }
+    }
+
+  }
+
+  #section2 {
+    position: relative;
+    padding: 100px 0;
+    padding-top: 150px;
+
+    @include media-breakpoint-down(md) {
+      padding-top: 0;
+      padding-bottom: 0;
+    }
+
+    .sales-static {
+      position: absolute;
+      left: -47px;
+      top: 0;
+
+      @include media-breakpoint-down(md) {
+        position: relative;
+        left: 0;
+        width: 70%;
+        top: -100px;
+      }
+    }
+
+    .target-achieved {
+      position: absolute;
+      top: 55px;
+      z-index: 99;
+
+      @include media-breakpoint-down(md) {
+        width: 65%;
+        top: -190px;
+        left: 100px;
+      }
+    }
+
+  }
+
+
+
+  #section3 {
+    position: relative;
+    padding: 100px 0;
+    padding-bottom: 300px;
+    background-color: #4d83f0;
+
+    @include media-breakpoint-down(md) {
+      padding: 0;
+    }
+
+    .user-img {
+      position: absolute;
+      right: -200px;
+      top: -60px;
+
+      @include media-breakpoint-down(md) {
+        position: relative;
+        right: 0;
+        top: 0;
+        width: 50%;
+        left: 150px;
+      }
+    }
+
+    .diagram-img {
+      position: absolute;
+      right: -37px;
+      bottom: 0;
+
+      @include media-breakpoint-down(md) {
+        position: relative;
+        right: 0;
+      }
+    }
+
+  }
+
+  #section4 {
+    position: relative;
+    padding: 100px 0;
+    padding-bottom: 150px;
+
+    @include media-breakpoint-down(md) {
+      padding-bottom: 0;
+      padding-top: 0;
+
+    }
+
+    .rate-img {
+      position: absolute;
+      right: -100px;
+      top: 50px;
+
+      @include media-breakpoint-down(md) {
+        position: relative;
+        right: -60px;
+        top: 0;
+        width: 75%;
+      }
+    }
+
+    .diagram-img {
+      position: absolute;
+      left: calc(50% - 720px);
+      margin-top: -50px;
+
+      @include media-breakpoint-down(md) {
+        left: 0;
+        margin-top: 0;
+
+      }
+    }
+  }
+
+
+  #section5 {
+    position: relative;
+    padding: 100px 0;
+    padding-top: 150px;
+
+    @include media-breakpoint-down(md) {
+      padding-top: 100px;
+      padding-bottom: 0px;
+    }
+
+    .connected-people {
+      left: -150px;
+      top: 0;
+
+      @include media-breakpoint-down(md) {
+        left: 0;
+      }
+    }
+
+  }
+
+  #section6 {
+    position: relative;
+    padding: 100px 0;
+    padding-top: 0px;
+
+    @include media-breakpoint-down(md) {
+      padding-bottom: 0;
+    }
+
+    .product-sale {
+      position: absolute;
+      top: -130px;
+      margin-left: 50px;
+
+      @include media-breakpoint-down(md) {
+        position: relative;
+        top: 0;
+        margin-left: 0;
+      }
+    }
+  }
+
+  #section7 {
+    position: relative;
+    padding: 100px 0;
+
+    @include media-breakpoint-down(md) {
+      padding-top: 30px;
+    }
+
+    .tracking-img {
+      position: absolute;
+
+      @include media-breakpoint-down(md) {
+        position: relative;
+        margin-left: 0;
+      }
+    }
+  }
+}

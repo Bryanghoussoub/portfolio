@@ -1,0 +1,620 @@
+$sectionsMarginX: 80px;
+$borderBottomWidth: 6px solid black;
+
+app-digital-financial-suite {
+  .nowrap-space {
+    white-space: nowrap;
+
+    @include media-breakpoint-down(md) {
+      white-space: normal;
+    }
+  }
+
+  @include media-breakpoint-down(md) {
+
+    h2 {
+      font-size: 1.75rem;
+    }
+
+    .btn {
+      padding-left: 80px;
+      padding-right: 80px;
+    }
+
+  }
+
+
+
+
+  .know-more {
+    text-decoration: underline;
+    font-weight: 600;
+    color: #000;
+
+    a {
+      color: #000;
+
+    }
+  }
+
+  #section1 {
+    border-bottom: $borderBottomWidth;
+    margin: auto $sectionsMarginX;
+    position: relative;
+    padding: 150px 0;
+    padding-bottom: 0px;
+
+    @include media-breakpoint-down(md) {
+      margin: 0;
+      text-align: center;
+      padding: 0;
+      padding-top: 50px;
+    }
+
+    .title-spacing {
+      width: 100%;
+      text-align: center;
+      border-bottom: 10px solid #3a5aaf;
+      line-height: 0.1em;
+      margin: 10px 0 20px;
+      color: #3a5aaf;
+    }
+
+    .title-spacing span {
+      background: #fff;
+      padding: 0 10px;
+    }
+
+    .digital-comment {
+      position: absolute;
+      margin-left: -10px;
+      z-index: -1;
+
+      @include media-breakpoint-down(md) {
+        margin-left: 0;
+        left: -75px;
+        top: 10px;
+
+        img {
+          width: 50%;
+        }
+      }
+    }
+
+    .digital-chart {
+      position: absolute;
+      right: 0;
+      top: 0;
+      margin-right: -100px;
+
+      @include media-breakpoint-down(md) {
+        margin-right: 0;
+        // right: -25px;
+
+        img {
+          width: 50%;
+          margin-right: -20px;
+        }
+      }
+    }
+
+    .digital-chart-car {
+      margin-left: -30px;
+
+      @include media-breakpoint-down(md) {
+        margin-right: 0;
+
+        img {
+          width: 50%;
+        }
+      }
+    }
+
+    .digital-chart-groceries {
+      margin-left: -80px;
+
+      @include media-breakpoint-down(md) {
+        margin-right: 0;
+
+        img {
+          width: 50%;
+        }
+      }
+    }
+
+    .digital-chart-shopping {
+      position: absolute;
+      right: 75px;
+      margin-top: -40px;
+      z-index: 99;
+
+      @include media-breakpoint-down(md) {
+        margin-top: 0;
+        right: 25px;
+        top: 0px;
+
+        img {
+          width: 35%;
+
+        }
+      }
+    }
+
+  }
+
+
+  #section2 {
+    border-bottom: $borderBottomWidth;
+    margin: auto $sectionsMarginX;
+    position: relative;
+    padding: 150px 0;
+
+    @include media-breakpoint-down(md) {
+      margin: 0;
+      text-align: center;
+      padding-bottom: 0px;
+      padding-top: 50px;
+
+    }
+
+    .title-spacing {
+      width: 100%;
+      text-align: center;
+      border-bottom: 10px solid #3a5aaf;
+      line-height: 0.1em;
+      margin: 10px 0 20px;
+      color: #3a5aaf;
+    }
+
+    .title-spacing span {
+      background: #fff;
+      padding: 0 10px;
+    }
+
+
+    .business-financial-image {
+      position: absolute;
+      left: -80px;
+      bottom: -100px;
+
+      @include media-breakpoint-down(md) {
+        bottom: -100px;
+        left: 0;
+        position: relative;
+      }
+    }
+
+    .transfer-image {
+      position: absolute;
+      top: 0;
+      left: 75px;
+
+      @include media-breakpoint-down(md) {
+        left: 50px;
+        margin-top: 10px;
+        top: inherit;
+        width: 50%;
+      }
+    }
+  }
+
+  #section3 {
+    border-bottom: $borderBottomWidth;
+    margin: auto $sectionsMarginX;
+    position: relative;
+    padding: 150px 0;
+
+    @include media-breakpoint-down(md) {
+      margin: 0;
+      text-align: center;
+      padding-bottom: 0;
+      padding-top: 100px
+    }
+
+    .title-spacing {
+      width: 100%;
+      text-align: center;
+      border-bottom: 10px solid #3a5aaf;
+      line-height: 0.1em;
+      margin: 10px 0 20px;
+      color: #3a5aaf;
+    }
+
+    .title-spacing span {
+      background: #fff;
+      padding: 0 10px;
+    }
+
+    .atm-machine {
+
+
+      @include media-breakpoint-down(md) {
+        margin-top: 50px;
+        width: 90%;
+      }
+    }
+
+    .atm-chart {
+      position: absolute;
+      margin-left: -17px;
+      margin-top: 150px;
+
+      @include media-breakpoint-down(md) {
+        margin-top: 0;
+        margin-left: 0;
+        top: 150px;
+        left: -80px;
+
+        img {
+          width: 50%;
+        }
+      }
+    }
+
+    .atm-car-loan {
+      position: absolute;
+      right: 0;
+      z-index: 99;
+      bottom: 120px;
+      margin-right: -50px;
+
+      @include media-breakpoint-down(md) {
+        margin-right: 0;
+
+        img {
+          width: 50%;
+        }
+      }
+    }
+
+    .atm-light {
+      position: absolute;
+      margin-top: -20px;
+      margin-left: 50px;
+
+      @include media-breakpoint-down(md) {
+        margin-top: 0;
+        margin-left: 0;
+        left: 0;
+
+        img {
+          width: 50%;
+        }
+      }
+    }
+
+    .atm-woman {
+      position: absolute;
+      right: 0;
+      margin-right: -65px;
+
+      @include media-breakpoint-down(md) {
+        margin-right: 0;
+        // bottom: -60px;
+
+        img {
+          width: 50%;
+        }
+      }
+    }
+  }
+
+
+  #section4 {
+    border-bottom: $borderBottomWidth;
+    margin: auto $sectionsMarginX;
+    position: relative;
+    padding: 150px 0;
+
+    @include media-breakpoint-down(md) {
+      margin: 0;
+      text-align: center;
+      padding-top: 50px;
+      padding-bottom: 0;
+
+    }
+
+    .title-spacing {
+      width: 100%;
+      text-align: center;
+      border-bottom: 10px solid #3a5aaf;
+      line-height: 0.1em;
+      margin: 10px 0 20px;
+      color: #3a5aaf;
+    }
+
+    .title-spacing span {
+      background: #fff;
+      padding: 0 10px;
+    }
+
+    .digital-branch-pad {
+      position: absolute;
+      left: -80px;
+      bottom: 0;
+
+      @include media-breakpoint-down(md) {
+        position: relative;
+        left: 0;
+        margin-top: 100px;
+
+      }
+    }
+
+    .digital-branch-comment {
+      position: absolute;
+      top: 65px;
+      left: -50px;
+      z-index: 99;
+
+      @include media-breakpoint-down(md) {
+        top: inherit;
+        margin-top: -60px;
+        left: -30px;
+
+        img {
+          width: 50%;
+        }
+      }
+    }
+
+    .digital-branch-profile {
+      position: absolute;
+      top: 15px;
+      left: 160px;
+
+      @include media-breakpoint-down(md) {
+        top: inherit;
+        left: 100px;
+        margin-top: -90px;
+
+        img {
+          width: 50%;
+        }
+      }
+    }
+
+    .digital-branch-product {
+      position: absolute;
+      top: 115px;
+      left: 475px;
+
+      @include media-breakpoint-down(md) {
+        top: inherit;
+        left: inherit;
+        right: 0px;
+        z-index: 99;
+        margin-top: -60px;
+
+        img {
+          width: 50%;
+        }
+      }
+    }
+
+    .digital-branch-education {
+      position: absolute;
+      left: 475px;
+      bottom: 40px;
+      z-index: 99;
+
+      @include media-breakpoint-down(md) {
+        right: 0;
+        left: inherit;
+        bottom: 0;
+
+        img {
+          width: 50%;
+        }
+      }
+    }
+  }
+
+  #section5 {
+    border-bottom: $borderBottomWidth;
+    margin: auto $sectionsMarginX;
+    position: relative;
+    padding: 150px 0;
+    padding-top: 200px;
+
+    @include media-breakpoint-down(md) {
+      margin: 0;
+      text-align: center;
+      padding-top: 50px;
+
+    }
+
+    .title-spacing {
+      width: 100%;
+      text-align: center;
+      border-bottom: 10px solid #3a5aaf;
+      line-height: 0.1em;
+      margin: 10px 0 20px;
+      color: #3a5aaf;
+    }
+
+    .title-spacing span {
+      background: #fff;
+      padding: 0 10px;
+    }
+
+    .Weatlth-comment {
+      position: absolute;
+      top: 20px;
+      right: 465px;
+
+      @include media-breakpoint-down(md) {
+        top: inherit;
+        right: inherit;
+        left: -100px;
+        margin-top: 40px;
+
+        img {
+          width: 50%;
+        }
+      }
+
+    }
+
+    .wealth-car {
+      position: absolute;
+      bottom: 60px;
+      right: 345px;
+
+      @include media-breakpoint-down(md) {
+        right: 0;
+        left: 0;
+      }
+    }
+
+    .wealth-hand {
+      position: absolute;
+      right: -80px;
+      bottom: -6px;
+
+      @include media-breakpoint-down(md) {
+        position: relative;
+        right: 0;
+        margin-top: 50px;
+      }
+    }
+
+    .wealth-static {
+      position: absolute;
+      right: 0;
+      top: 25px;
+
+      @include media-breakpoint-down(md) {
+        // position: relative;
+        top: inherit;
+      }
+    }
+  }
+
+  #section6 {
+    margin: auto $sectionsMarginX;
+    position: relative;
+    padding: 150px 0;
+    padding-bottom: 250px;
+
+    @include media-breakpoint-down(md) {
+      margin: 0;
+      text-align: center;
+      padding-bottom: 150px;
+      padding-top: 50px;
+    }
+
+    .title-spacing {
+      width: 100%;
+      text-align: center;
+      border-bottom: 10px solid #3a5aaf;
+      line-height: 0.1em;
+      margin: 10px 0 20px;
+      color: #3a5aaf;
+    }
+
+    .title-spacing span {
+      background: #fff;
+      padding: 0 10px;
+    }
+
+    .adminstration-laptop {
+      position: absolute;
+      left: -80px;
+      top: 100px;
+
+      @include media-breakpoint-down(md) {
+        position: relative;
+        left: 0;
+        top: 50px;
+        width: 75%;
+      }
+    }
+
+    .adminstration-diagram {
+      position: absolute;
+      top: 200px;
+      left: -155px;
+
+      @include media-breakpoint-down(md) {
+        top: inherit;
+        left: inherit;
+
+        img {
+          width: 50%;
+        }
+      }
+    }
+
+    .adminstration-chart {
+      position: absolute;
+      left: 565px;
+      bottom: 230px;
+
+      @include media-breakpoint-down(md) {
+        left: inherit;
+        z-index: 99;
+        bottom: inherit;
+        margin-top: 30px;
+
+        img {
+          width: 50%;
+        }
+      }
+    }
+
+    .adminstration-man {
+      position: absolute;
+      top: 10px;
+      left: 275px;
+
+      @include media-breakpoint-down(md) {
+        top: inherit;
+        left: inherit;
+        right: 50px;
+        margin-top: 10px;
+
+        img {
+          width: 50%;
+        }
+      }
+    }
+
+    .adminstration-price {
+      position: absolute;
+      top: 160px;
+      left: 445px;
+      z-index: 99;
+
+      @include media-breakpoint-down(md) {
+        top: inherit;
+        left: inherit;
+        right: 0;
+        margin-top: 90px;
+
+        img {
+          width: 50%;
+        }
+      }
+
+    }
+
+    .adminstration-woman {
+      position: absolute;
+      left: 495px;
+      bottom: 295px;
+      z-index: 99;
+
+      @include media-breakpoint-down(md) {
+        top: inherit;
+        left: inherit;
+        right: 5px;
+        margin-bottom: -65px;
+
+        img {
+          width: 50%;
+        }
+      }
+    }
+  }
+}

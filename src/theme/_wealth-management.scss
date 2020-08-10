@@ -1,0 +1,230 @@
+app-wealth-management {
+  p {
+    text-align: justify;
+  }
+
+  @include media-breakpoint-down(md) {
+    h3 {
+      text-align: center;
+    }
+
+    p {
+      // width: 90% !important;
+      text-align: center;
+    }
+  }
+
+  #section1 {
+    min-height: 1200px;
+    position: relative;
+    z-index: 3;
+
+    @include media-breakpoint-down(md) {
+      padding-top: 50px;
+    }
+
+    .container {
+      button {
+        padding-left: 80px;
+        padding-right: 80px;
+      }
+    }
+
+    .p-relative {
+      position: relative;
+    }
+
+    .line-chart-card-image {
+      position: absolute;
+      right: 0;
+      top: 100px;
+      z-index: -1;
+
+      @include media-breakpoint-down(md) {
+        top: 170px;
+      }
+    }
+
+    .mobile-stock {
+      @include media-breakpoint-down(md) {
+        width: 50%;
+      }
+    }
+
+
+    .chart-card-image-container {
+      min-height: 340px;
+
+      @include media-breakpoint-down(md) {
+        position: absolute;
+        top: 110px;
+        width: 50%;
+        margin-left: 0;
+        margin-right: 0;
+        left: 190px;
+        min-height: inherit;
+      }
+
+      img {
+        margin-left: -100px;
+        margin-top: 110px;
+
+
+
+      }
+    }
+
+    img {
+      &.rocket-image {
+        position: absolute;
+        bottom: 320px;
+        right: 50px;
+
+        @include media-breakpoint-down(md) {
+          width: 35%;
+          right: 0;
+          bottom: 220px;
+        }
+      }
+
+      &.card-image {
+        position: absolute;
+        bottom: 65px;
+        right: 500px;
+
+        @include media-breakpoint-down(md) {
+          width: 35%;
+          right: inherit;
+          left: 0;
+        }
+      }
+
+      &.hand-image {
+        position: absolute;
+        bottom: -100px;
+        right: 0;
+
+        @include media-breakpoint-down(md) {
+          position: relative;
+          bottom: 0;
+        }
+      }
+    }
+
+    @include media-breakpoint-down(md) {
+      h1 {
+        font-size: 1.75rem;
+      }
+
+      p {
+        width: 90% !important;
+      }
+
+      .portfolio-mobile {
+        width: 100% !important;
+      }
+
+    }
+  }
+
+  #section2 {
+    background-color: #555d72;
+    min-height: 700px;
+    position: relative;
+    z-index: 2;
+
+    @include media-breakpoint-down(sm) {
+      .client-place {
+        text-align: center;
+      }
+    }
+
+    img {
+      position: absolute;
+
+      &.area-chart {
+        right: 0;
+
+        @include media-breakpoint-down(sm) {
+          position: relative;
+          // width: 75%;
+          // margin-left: 50px;
+        }
+      }
+
+      &.pie-chart {
+        left: 100px;
+        bottom: -175px;
+
+        @include media-breakpoint-down(sm) {
+          position: relative;
+          width: 65%;
+          bottom: -30px;
+        }
+      }
+
+      &.pie-chart-avatars {
+        left: 20px;
+        bottom: 190px;
+
+        @include media-breakpoint-down(sm) {
+          width: 50%;
+          bottom: 195px;
+          left: 10px;
+        }
+      }
+    }
+
+    .container {
+      height: 700px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+
+      @include media-breakpoint-down(sm) {
+        padding-top: 0;
+
+      }
+
+      >.row {
+        height: 100%;
+      }
+    }
+  }
+
+  #section3 {
+    position: relative;
+    color: #555d72;
+    padding-top: 300px;
+    padding-bottom: 100px;
+
+    @include media-breakpoint-down(sm) {
+      padding-top: 100px;
+    }
+
+    .container {
+      .row:first-child {
+        min-height: 250px;
+      }
+
+      img {
+        &.calendar-image {
+          position: absolute;
+          right: 40px;
+          max-width: initial;
+
+          @include media-breakpoint-down(md) {
+            position: relative;
+            right: 0;
+            max-width: 100%;
+            margin-bottom: 20px;
+            margin-top: -40px;
+          }
+        }
+
+        @include media-breakpoint-down(md) {
+          // display: none;
+        }
+      }
+    }
+  }
+}

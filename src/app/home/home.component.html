@@ -1,0 +1,304 @@
+<!-- START SECTION 1 -->
+<div id="section1" class="jarallax">
+  <app-header [logoType]="'white'" [buttonClass]="'text-white'" [showMiddlePic]="false"
+    [mediaLinksClass]="'btn-outline-light'"></app-header>
+
+  <div class="container">
+    <div class="intro-info-content d-flex align-items-end">
+      <div class="wow fadeInUp" data-wow-delay="0.3s">
+        <h1 class="display-4">
+          Let's <span class="font-weight-bold">Shape</span> the <br />
+          <span class="font-weight-bold">Future</span> of
+          <span class="font-weight-bold">Banking</span> <br />
+          <span class="font-weight-bold">Together</span>
+        </h1>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- END SECTION 1 -->
+
+<!-- START SECTION 2 -->
+<div id="section2">
+  <div class="container">
+    <h2 class="h1 font-weight-bolder text-uppercase mt-5 mb-4 wow fadeInDown">
+      We know what the customer really wants!
+    </h2>
+    <div class="subtitle">
+      <div class="mb-4">
+        <span class="wow fadeInDown">With our</span>
+        <div class="mx-4 dropdown">
+          <div ngbDropdown class="c-block">
+            <button class="btn btn-link font-weight-bolder" ngbDropdownToggle>
+              {{ selectedMobileLayer.value }}
+            </button>
+            <div ngbDropdownMenu>
+              <button ngbDropdownItem *ngFor="let item of mobileLayers" (click)="selectMobileLayer(item)">
+                {{ item.value }}
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="wow fadeInUp mx-5 mx-sm-0">
+        We created the Finest App to provide you with an <br />
+        <strong>Outstanding Financial Experience</strong>
+      </div>
+    </div>
+    <!--Mobile layers-->
+    <div class="mobile-layers-container">
+      <div class="moving-layer-container" [ngSwitch]="selectedMobileLayer.key">
+        <!-- Security -->
+        <div *ngSwitchCase="'security'" [@inOutAnimation]>
+          <ng-container *ngTemplateOutlet="
+              mobileMovingLayers;
+
+              context: {
+                layer: selectedMobileLayer.key,
+                nextLayer: mobileLayers[1]
+              }
+            ">
+          </ng-container>
+        </div>
+        <!-- Banking capabilities -->
+        <div *ngSwitchCase="'banking_capabilities'" [@inOutAnimation]>
+          <ng-container *ngTemplateOutlet="
+              mobileMovingLayers;
+
+              context: {
+                layer: selectedMobileLayer.key,
+                nextLayer: mobileLayers[2]
+              }
+            ">
+          </ng-container>
+        </div>
+        <!-- Smart analysis -->
+        <div *ngSwitchCase="'smart_analysis'" [@inOutAnimation]>
+          <ng-container *ngTemplateOutlet="
+              mobileMovingLayers;
+
+              context: {
+                layer: selectedMobileLayer.key,
+                nextLayer: mobileLayers[3]
+              }
+            ">
+          </ng-container>
+        </div>
+        <!-- Data enrichment -->
+        <div *ngSwitchCase="'data_enrichment'" [@inOutAnimation]>
+          <ng-container *ngTemplateOutlet="
+              mobileMovingLayers;
+              context: {
+                layer: selectedMobileLayer.key,
+                nextLayer: mobileLayers[4]
+              }
+            ">
+          </ng-container>
+        </div>
+        <!-- Smart assistance -->
+        <div *ngSwitchCase="'smart_assistance'" [@inOutAnimation]>
+          <ng-container *ngTemplateOutlet="
+              mobileMovingLayers;
+
+              context: {
+                layer: selectedMobileLayer.key,
+                nextLayer: mobileLayers[0]
+              }
+            ">
+          </ng-container>
+        </div>
+      </div>
+      <img src="/assets/images/mobile-layers/base.png" class="base wow fadeInTop jarallax" data-jarallax-element="30" />
+    </div>
+  </div>
+</div>
+<!-- END SECTION 2 -->
+
+<!-- START SECTION 3 -->
+<div id="section3" class="jarallax">
+  <div class="container py-sm-5">
+    <!--Grid row-->
+    <div class="row">
+      <!--Grid column-->
+      <div class="intro-info-content col-md-4 mt-4">
+          <div class="wow fadeIn d-none d-sm-block" *ngIf="showSection3Desciption">
+              <h2 class="font-weight-bold text-white d-flex justify-content-center justify-content-sm-start">
+                Smart Assistant
+              </h2>
+              <p class="h6 text-white text-justify text mx-5 mx-sm-0">
+                Ivy, our personal assistant, can help you with anything you want,
+                anywhere you want and on any channel.
+              </p>
+            </div>
+        <div class="wow fadeIn d-sm-none d-block" >
+          <h2 class="font-weight-bold text-white d-flex justify-content-center justify-content-sm-start">
+            Smart Assistant
+          </h2>
+          <p class="h6 text-white text-justify text mx-5 mx-sm-0">
+            Ivy, our personal assistant, can help you with anything you want,
+            anywhere you want and on any channel.
+          </p>
+        </div>
+      </div>
+      <!--Grid column-->
+      <div
+        class="col-md-8 wow text-center d-flex justify-content-center justify-content-sm-end align-items-center animated mobile-carousel-container">
+        <div class="mobile-carousel">
+          <div class="carousel">
+            <img src="/assets/images/home/mobile-carousel-1.png" />
+            <img src="/assets/images/home/mobile-carousel-2.jpg" />
+            <img src="/assets/images/home/mobile-carousel-3.jpg" />
+            <img src="/assets/images/home/mobile-carousel-4.jpg" />
+          </div>
+          <div class="frame"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- END SECTION 3 -->
+
+<!-- START SECTION 4 -->
+<div id="section4" class="jarallax d-flex align-items-center">
+  <div class="container">
+    <!--Grid row-->
+    <div class="row">
+      <!--Grid column-->
+      <div class="col-md-5 intro-info-content wow fadeInLeft ">
+        <h4 class="font-weight-bold text-uppercase subtitle d-flex justify-content-center justify-content-sm-start">
+          Great focus on
+        </h4>
+        <h1
+          class="display-1 font-weight-bolder text-uppercase header d-flex justify-content-center justify-content-sm-start">
+          UX</h1>
+        <p class="text-justify text mx-5 mx-sm-0">
+          <span class="font-weight-bold">User Experience </span>
+          Experience is a vital process within product development. the visual aspect of the work - the design - is more
+          noticed than anything else. However, UX design encompasses much more than that.
+        </p>
+      </div>
+      <!--Grid column-->
+      <div class="offset-md-1 col-md-5 intro-info-content wow fadeInRight">
+        <h4 class="font-weight-bold text-uppercase subtitle d-flex justify-content-center justify-content-sm-start">
+          And
+        </h4>
+        <h1
+          class="display-1 font-weight-bolder text-uppercase header big d-flex justify-content-center justify-content-sm-start">
+          R&D
+        </h1>
+        <p class="text-justify text mx-5 mx-sm-0">
+          <span class="font-weight-bold">Research & Development </span>
+          is in the core of X-tends. We are always seeking ideas that can help develop new products, features and
+          services to enhance pre-existing products or processes.
+        </p>
+      </div>
+    </div>
+    <!--Grid row-->
+  </div>
+</div>
+<!-- END SECTION 4 -->
+
+<!-- START SECTION 5 -->
+<div id="section5" class="jarallax d-flex align-items-center">
+  <div class="container">
+    <!--Grid row-->
+    <div class="row">
+      <!--Grid column-->
+      <div class="col-md-7"></div>
+      <!--Grid column-->
+      <div class="intro-info-content col-md-5 wow fadeIn">
+        <p class="text-white text-justify text wow fadeInDown mx-5 mx-sm-0">
+          Our goal is leveraging Digital Banking with a Smart and Personalized Experience to present financial
+          institutions with a real competitive edge.
+          <button type="button" class="btn btn-primary btn-block mt-4" [routerLink]="[
+          '/request-demo',
+          { interest: DemoServices.ALL_SOLUTIONS }
+        ]">
+        Request Demo
+      </button>
+        </p>
+
+      </div>
+    </div>
+  </div>
+</div>
+<!-- END SECTION 5 -->
+
+<!-- START SECTION 6 -->
+<div id="section6" class="text-center">
+  <div class="container">
+    <h1 class="header text-uppercase my-5 pb-4 font-weight-bolder wow fadeInUp">
+      Our Partners
+    </h1>
+    <!--Grid row-->
+    <div class="row mt-3 mb-5">
+      <!--Grid column-->
+      <div class="col-md-5 wow fadeIn intro-info-content mb-5 mb-sm-0">
+        <div class="image-container align-items-center d-flex justify-content-center">
+          <img class="wow fadeInDown" src="/assets/images/backbase.png" width="400px" />
+        </div>
+        <p class="text-justify text-center text wow fadeInDown mx-3 mx-sm-0">
+          Backbase empowers financial institutions to accelerate their digital transformation and effectively compete in
+          a digital-first world, by unifying data and functionalities from traditional core systems and new fintech
+          players into a seamless, digital customer experience.
+        </p>
+      </div>
+      <!--Grid column-->
+      <div class="col-md-2"></div>
+      <!--Grid column-->
+      <div class="col-md-5 wow fadeIn intro-info-content">
+        <div class="image-container align-items-center d-flex justify-content-center">
+          <img class="wow fadeInDown" src="/assets/images/kobil.png" />
+        </div>
+        <p class="text-justify text-center text wow fadeInDown mx-3 mx-sm-0">
+          KOBIL Systems, a leading provider of digital identity security with
+          app shielding, web application security, authentication, authorization
+          for companies.
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- END SECTION 6 -->
+
+<!-- START SECTION 7 -->
+<div id="section7">
+  <agm-map [latitude]="mapOptions.lat" [longitude]="mapOptions.lng" [zoom]="mapOptions.zoom"
+    [keyboardShortcuts]="mapOptions.keyboardShortcuts" [disableDefaultUI]="mapOptions.disableDefaultUI"
+    [zoomControl]="mapOptions.zoomControl" [scrollwheel]="mapOptions.scrollwheel" [mapTypeId]="mapOptions.mapTypeId"
+    [styles]="mapOptions.styles">
+    <agm-marker [latitude]="companyInfo.lat" [longitude]="companyInfo.lng" [iconUrl]="'/assets/images/map-marker.png'">
+      <agm-info-window>X-Tends</agm-info-window>
+    </agm-marker>
+  </agm-map>
+
+  <div class="map-card p-3 px-5">
+    <p class="font-weight-bold mb-0">
+      {{ companyInfo.address1 }}
+    </p>
+    <p class="font-weight-bold">
+      {{ companyInfo.address2 }}
+    </p>
+    <p class="mb-0">
+      {{ companyInfo.tel }}
+    </p>
+    <p>
+      {{ companyInfo.mobile }}
+    </p>
+    <p class="mb-1">
+      {{ companyInfo.email }}
+    </p>
+  </div>
+</div>
+<!-- END SECTION 7 -->
+
+<app-footer></app-footer>
+
+<!-- MOBILE MOVING LAYER TEMPLATES-->
+<ng-template #mobileMovingLayers let-layer="layer" let-nextLayer="nextLayer">
+  <img src="/assets/images/mobile-layers/{{ layer }}-elements.png"
+    class="chaning-layer-elements wow fadeInDown jarallax" data-jarallax-element="-10" data-wow-delay="1s"
+    (click)="selectMobileLayer(nextLayer)" />
+  <img src="/assets/images/mobile-layers/{{ layer }}-base.png" class="chaning-layer-base wow fadeInDown jarallax"
+    data-jarallax-element="-10" (click)="selectMobileLayer(nextLayer)" />
+</ng-template>

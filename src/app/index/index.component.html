@@ -1,0 +1,31 @@
+<app-header
+
+  [isOpen]="true"
+  [showMiddlePic]="true"
+></app-header>
+
+<!-- NORMAL VIEW -->
+<nav class="carousel" *ngIf="!smallScreen">
+  <div
+    *ngFor="let menu of menus | visible"
+    class="carousel-cell shadow"
+    [attr.data-flickity-bg-lazyload]="menu.imageUrl"
+  >
+    <h2 class="font-weight-bold header">{{ menu.title }}</h2>
+  </div>
+</nav>
+
+<!-- MOBILE VIEW -->
+<ul class="nav flex-column mt-5 mx-3" *ngIf="smallScreen">
+  <li class="nav-item">
+    <a
+      href="#"
+      class="nav-link font-weight-bolder"
+      [routerLink]="[menu.url]"
+      [routerLinkActive]="'active'"
+      *ngFor="let menu of menus | visible"
+    >
+      {{ menu.title }}
+    </a>
+  </li>
+</ul>

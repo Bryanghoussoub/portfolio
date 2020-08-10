@@ -1,0 +1,154 @@
+app-digital-branch-experience {
+  p {
+    text-align: justify;
+  }
+
+  @include media-breakpoint-down(md) {
+    h3 {
+      text-align: center;
+    }
+
+    p {
+      width: 90% !important;
+      text-align: center;
+    }
+  }
+
+  #section1 {
+    position: relative;
+    z-index: 1;
+
+    @include media-breakpoint-down(md) {
+      padding-top: 50px;
+    }
+
+    @include media-breakpoint-down(md) {
+      h1 {
+        font-size: 1.75rem;
+      }
+
+      p {
+        width: 90% !important;
+      }
+    }
+
+    .container {
+      button {
+        padding-left: 80px;
+        padding-right: 80px;
+      }
+
+      .images-container {
+        margin-bottom: -200px;
+        position: relative;
+
+        .sale-img {
+          position: absolute;
+          right: -207px;
+          top: -9px;
+          // display: none;
+
+          @include media-breakpoint-down(md) {
+            right: 0;
+            width: 30%;
+            top: -40px;
+          }
+        }
+
+        .ipad-img {
+          margin: 0 auto;
+
+          @include media-breakpoint-down(md) {
+            width: 85%;
+          }
+        }
+
+        .loan-img {
+          position: absolute;
+          left: -60px;
+          top: 20px;
+
+          @include media-breakpoint-down(md) {
+            right: 0;
+            width: 30%;
+            left: -20px;
+            top: -10px;
+          }
+        }
+
+        @include media-breakpoint-down(sm) {
+          // .sale-img,
+          // .loan-img {
+          //    display: none;
+          // }
+        }
+      }
+    }
+  }
+
+  #section2 {
+    background-color: #3d455a;
+    padding-top: 250px;
+    padding-bottom: 50px;
+    position: relative;
+
+    @include media-breakpoint-down(sm) {
+      padding-bottom: 20px;
+    }
+
+    >img {
+      position: absolute;
+      right: 0;
+      bottom: 100px;
+
+      @include media-breakpoint-down(sm) {
+        // display: none;
+        position: relative;
+        top: -50px;
+
+      }
+    }
+  }
+
+  #section3 {
+    padding-top: 100px;
+    padding-bottom: 100px;
+
+    @include media-breakpoint-down(md) {
+      padding-top: 0;
+
+    }
+
+    .congrats-sale-images-container {
+      // display: none;
+      position: relative;
+      min-height: 380px;
+
+      .chart-image {
+        position: absolute;
+        right: -50px;
+        bottom: 0;
+        z-index: -1;
+
+        @include media-breakpoint-down(md) {
+          right: 0;
+          top: 100px;
+          width: 70%;
+
+        }
+      }
+
+      .alert-image {
+        margin-left: -25px;
+        margin-top: -40px;
+
+        @include media-breakpoint-down(md) {
+          margin-left: 0;
+          width: 60%;
+          top: 100px;
+
+        }
+      }
+    }
+  }
+}
